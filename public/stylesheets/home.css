@@ -108,11 +108,12 @@ h2{
 }
 
 .holderDiv{
-    padding: 15px;
+    padding: 25px;
     outline: 2px solid #212529;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
 }
 
@@ -241,7 +242,7 @@ h4{
     
 }
 
-a{
+.codingChunk a{
     color: rgb(159, 189, 230);
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
@@ -574,6 +575,7 @@ h5{
     }
 
     .holderDiv{
+        padding: 0px;
         flex-direction: column;
     }
 
@@ -593,7 +595,7 @@ h5{
     }
 
     p{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #speechifyImg{

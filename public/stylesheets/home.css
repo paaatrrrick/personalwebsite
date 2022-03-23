@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@700&family=Roboto:wght@300&display=swap');
+
+body{
+    background-color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+
+/* ------------------------------------ */
+
+
+
+ul.headingText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+ul.headingText li{
+    position: relative;
+    list-style: none;
+}
+ul.headingText li a{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    font-size: 8rem;
+    text-decoration: none;
+    line-height: 8rem;
+    letter-spacing: 2px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+}
+
+ul.headingText li a::before{
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+ul.headingText li a:hover::before
+{
+    width: 100%;
+}
+
+
+/* ------------------------------------ */
+
+
+.top{
+    background-color: #212529;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 6rem 3rem 6rem;
+}
+
+ .h1s{
+    margin: 4rem 0 12rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#fullBody{
+    margin: 4rem 2rem 8rem 0;
+    width: 440px;
+    height: 660px;
+    border-radius: 10% 30% 10% 30%;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------ */
+
+
+
+
+.busSect{
+    margin: 4rem 6rem 4rem 6rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+
+}
+
+.holderDiv{
+    padding: 15px;
+    outline: 2px solid #212529;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#bigTs{
+    width: 400px;
+    height: 400px;
+    border-radius: 20%;
+}
+
+.section{
+    margin-top: 50px;
+    
+}
+
+#tsLogo{
+    width: 20vw;
+    height: 5vw;
+}
+
+hr{
+    height: .5rem;
+    border-radius: 5px;
+    border: none;
+}
+#hr1{
+    background: rgb(67,206,162);
+    background: linear-gradient(90deg, rgba(67,206,162,1) 0%, rgba(24,90,157,1) 85%);
+}
+#hr2{
+    background: rgb(69,104,220);
+    background: linear-gradient(90deg, rgba(69,104,220,1) 0%, rgba(176,106,179,1) 100%);
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#speechifyText{
+    margin-left: 2rem;   
+}
+
+#speechifyImg{
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;  
+}
+
+#speechH3{
+    color: #4c3aff;
+}
+
+
+
+/* ------------------------------------ */
+
+
+#codeTop{
+    width: 100%;
+}
+
+
+h4{
+    margin-top: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+.codeSect{
+    background-color:#212529;
+    padding: 2rem 0rem 12rem 0rem;
+}
+
+.codeSectInside{
+    margin: 2rem 6rem 4rem 6rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#codeh2{
+    padding-top: 2rem;
+    margin-top: 3rem;
+    color: white;
+}
+
+#codingChunks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.codingChunk{
+    padding: 15px;
+    outline: 2px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 28%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.75);
+}
+
+.codingImage{
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+
+.codingParagraph{
+    color: #fff;
+    font-size: 25px;
+} 
+
+.bold{
+    font-family: 'Montserrat', sans-serif;
+
+    
+}
+
+a{
+    color: rgb(159, 189, 230);
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+
+.teenageTopStuff{
+    margin: 4rem 6rem 0rem 6rem;
+}
+
+
+.teenager{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 13rem;
+
+}
+
+#teenageContent{
+    margin: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#iowaImage{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;  
+}
+
+li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    line-height: 3rem;
+}
+
+
+/* ------------------------------------ */
+
+
+.bott{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4c3aff;
+    width: 100%;
+
+}
+
+.toph1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6rem;
+    color: #FFF;
+    padding-top: 15px;
+
+}
+
+.goodbye{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+
+}
+
+#byeImg{
+    width: 300px;
+    height: 300px;
+    border-radius: 45%;
+}
+
+.label {
+    padding:10px;
+    font-size:18px;
+    color:#111;
+}
+
+#copyImage{
+    margin-top: .5em;
+    width: 20px;
+    height: 20px;
+}
+
+h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: #FFF;
+}
+
+.wave{
+    width: 75px;
+    height: 75px;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+#waveDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ------------------------------------ */
+
+
+.copy-text {
+    position:relative;
+    padding:10px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    display:flex;
+    width: 25vw;
+}
+.copy-text input.text {
+    padding:10px;
+    font-size:18px;
+    color:#555;
+    border:none;
+    outline:none;
+    padding-right:50px;
+    width: 20vw;
+}
+.copy-text button {
+    background:#5569d4;
+    color:#fff;
+    font-size:20px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 25px;
+}
+.copy-text button:active {
+    background:#5569d4;
+}
+.copy-text button:before {
+    content:"Copied";
+    position:absolute;
+    top:-45px;
+    right:0px;
+    background:#5569d4;
+    padding:8px 10px;
+    border-radius:20px;
+    font-size:15px;
+    display:none;
+}
+.copy-text button:after {
+    content:"";
+    position:absolute;
+    top:-20px;
+    right:25px;
+    width:10px;
+    height:10px;
+    background:#5569d4;
+    transform:rotate(45deg);
+    display:none;
+}
+.copy-text.active button:before,
+.copy-text.active button:after {
+    display:block;
+}
+
+
+
+
+
+
+
+.custom-shape-divider-bottom-1645906219 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1645906219 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 144px;
+}
+
+.custom-shape-divider-bottom-1645906219 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+.custom-shape-divider-bottom-1645906604 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1645906604 svg {
+    position: relative;
+    display: block;
+    width: calc(127% + 1.3px);
+    height: 191px;
+}
+
+.custom-shape-divider-bottom-1645906604 .shape-fill {
+    fill: #4C3AFF;
+}
+
+
+
+
+
+
+.custom-shape-divider-top-1645907307 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1645907307 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 84px;
+}
+
+.custom-shape-divider-top-1645907307 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+.custom-shape-divider-bottom-1645907450 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1645907450 svg {
+    position: relative;
+    display: block;
+    width: calc(102% + 1.3px);
+    height: 189px;
+}
+
+.custom-shape-divider-bottom-1645907450 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+@media only screen and (max-width: 1200px)  {
+
+    .top{
+        flex-direction: column;
+        padding: 3rem 0rem 3rem 0rem;
+        overflow: hidden;
+    }
+
+    .h1s{
+        margin: 2rem 0 2rem 1rem;
+    }
+
+    ul.headingText li a{
+        font-size: 20vw;
+        line-height: 4rem;
+        color: #FFF;
+    }
+    ul.headingText li a::before{
+        display: none;
+    }
+
+    #fullBody{
+        margin: 1rem 1rem 8rem 1rem;
+        width: 80vw;
+        height: 125vw;
+        border-radius: 10% 30% 10% 30%;
+    }
+
+    .busSect{
+        margin: 4rem 2rem 4rem 2rem;
+        overflow: hidden;
+    }
+
+    .holderDiv{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 10vw;
+    }
+
+    #tsLogo{
+        width: 60vw;
+        height: 15vw;
+    }
+
+    #bigTs{
+        margin-top: 2rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    #speechifyImg{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+    }
+    #speechifyText{
+        margin-left: 0rem;   
+    }
+
+    .codeSect{
+        overflow: hidden;
+    }
+
+    .codeSectInside{
+        margin: 2rem 2rem 4rem 2rem;
+    }
+
+    #codingChunks{
+        margin: 1rem 2rem 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .codingChunk{
+        width: 95%;
+        margin-bottom: 3rem;
+    }
+
+    h4{
+
+        font-size: 20px;
+    }
+
+    li{
+        font-size: 1.5rem;
+        margin: 0rem 3rem 0rem 3rem;
+
+    }
+
+    .teenager{
+        overflow: hidden;
+    }
+
+    .teenageTopStuff{
+        margin: 2rem 2rem 4rem 2rem;
+    }
+
+    #teenageContent{
+        margin: 0rem;
+        flex-direction: column;
+    }
+
+    #iowaImage{
+        width: 80vw;
+        height: 80vw;
+        margin-bottom: 2rem;
+    }
+
+
+    .goodbye{
+        flex-direction: column;
+    }
+
+    .bott{
+        overflow: hidden;
+    }
+
+
+    .copy-text{
+        display: none;
+    }
+    h5{
+        display: none;
+    }
+
+    #byeImg{
+        margin: 4rem 0rem 4rem 0rem;
+    }
+
+    .holderDiv{
+        outline: 0px solid #212529;
+        border-radius: 0px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.0);
+    }
+    
+}

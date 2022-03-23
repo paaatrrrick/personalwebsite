@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
+
 const methodOverride = require('method-override');
 const express = require('express');
 const path = require('path');
@@ -20,8 +24,13 @@ app.all('*', (req, res, next) => {
     res.redirect('./')
 })
 
+let PORT = process.env.PORT
 
-app.listen(3000, () => {
+if (PORT == null || PORT == "") {
+    PORT = 3000
+}
+
+app.listen(PORT, () => {
     console.log('Serving on port 3000')
 })
 

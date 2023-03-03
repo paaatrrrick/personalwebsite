@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f6594989.css",
+    "main.js": "/static/js/main.01277494.js",
+    "static/js/787.95f4841a.chunk.js": "/static/js/787.95f4841a.chunk.js",
+    "static/media/swipe.mov": "/static/media/swipe.4a395aecd7c0b63ee789.mov",
+    "static/media/lecture.png": "/static/media/lecture.198fcab267e4e9af195a.png",
+    "static/media/summ.png": "/static/media/summ.ba36c57620f8a0a3eacb.png",
+    "static/media/full2.jpeg": "/static/media/full2.eea55009c06877b0da1c.jpeg",
+    "static/media/fullTS.JPG": "/static/media/fullTS.05a495951b47b0ed3973.JPG",
+    "static/media/vidify.png": "/static/media/vidify.a0497e6a55d7364a4cb8.png",
+    "static/media/wordsmith.png": "/static/media/wordsmith.6d8e27eea905eaa94802.png",
+    "static/media/actively.png": "/static/media/actively.3753ca4f19732bf91001.png",
+    "static/media/face.JPG": "/static/media/face.7605566350dbc388c537.JPG",
+    "static/media/gd.png": "/static/media/gd.378b23a77a6d27329785.png",
+    "static/media/jp.jpeg": "/static/media/jp.1eb3ffde91dc58a22805.jpeg",
+    "static/media/copy.png": "/static/media/copy.e5c201e959a9215c0e66.png",
+    "static/media/hand.png": "/static/media/hand.d315ab2188d77468df8d.png",
+    "static/media/techstars-logo-vector.png": "/static/media/techstars-logo-vector.c19656a62d012fdaecb0.png",
+    "index.html": "/index.html",
+    "static/media/right.svg": "/static/media/right.25c69bd887f3f5e50f0ee169d70ae9e4.svg",
+    "static/media/left.svg": "/static/media/left.ebeacfb179b7f514eff7bd87d3d5caf4.svg",
+    "main.f6594989.css.map": "/static/css/main.f6594989.css.map",
+    "main.01277494.js.map": "/static/js/main.01277494.js.map",
+    "787.95f4841a.chunk.js.map": "/static/js/787.95f4841a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6594989.css",
+    "static/js/main.01277494.js"
+  ]
+}

@@ -3,25 +3,28 @@ const Card = (props) => {
     console.log(isVideo);
     return (
         <div className="codingChunk">
-            <div>
-                {isVideo ? <video className="codingImage" autoPlay>
-                    <source src={image} type="video/mp4" />
-                </video>
-                    : <img src={image} className="codingImage" />}
-                <p className='codingParagraph'><span className='bold'>{title}: </span>
-                    <br />
+            <div className="codingChunk-content">
+                <div>
+                    {isVideo ? <video className="codingImage" autoPlay controls>
+                        <source src={image} type="video/mp4" />
+                    </video>
+                        : <img src={image} className="codingImage" />}
+                    <p className='codingParagraph'><span className='bold'>{title}: </span>
+                        <br />
 
-                    {text}
-                </p>
+                        {text}
+                    </p>
+                </div>
+
+                <div className="card-link">
+                    {links.map((link, index) => {
+                        return (
+                            <a href={link.href} target="_blank" rel="noreferrer" className={index === links.length - 1 ? 'link' : 'link mR'}>{link.text}</a>
+                        )
+                    })}
+                </div>
             </div>
 
-            <div className="card-link">
-                {links.map((link, index) => {
-                    return (
-                        <a href={link.href} target="_blank" rel="noreferrer" className={index === links.length - 1 ? 'link' : 'link mR'}>{link.text}</a>
-                    )
-                })}
-            </div>
         </div >
     );
 }

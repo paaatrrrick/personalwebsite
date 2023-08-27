@@ -3,6 +3,7 @@ import './Home.css';
 
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import swipe from './images/swipe.mov'
 import myProjects from './constants/projects';
 import Card from './components/Card';
 
@@ -16,11 +17,8 @@ import iowa from './images/iowa.png'
 import face from './images/face.JPG'
 import copy from './images/copy.png'
 import hand from './images/hand.png'
-import left from './images/left.svg'
-import right from './images/right.svg'
 
 const Home = () => {
-    const [projects, setProjects] = useState(myProjects);
     const inputEl = useRef(null);
     const copyTextEl = useRef(null);
 
@@ -35,25 +33,11 @@ const Home = () => {
         }, 2500);
     };
 
-    const rotateProjectsLeft = () => {
-        const newProjects = [...projects];
-        const lastProject = newProjects.pop();
-        newProjects.unshift(lastProject);
-        setProjects(newProjects);
-    };
-
-    const rotateProjectsRight = () => {
-        const newProjects = [...projects];
-        const firstProject = newProjects.shift();
-        newProjects.push(firstProject);
-        setProjects(newProjects);
-    };
 
 
 
     return (
         <div className="home">
-            {/* <Link to="/blog" className="aboutLink">Check out my blog</Link> */}
             <div className="top" style={{ position: "relative" }}>
                 <div className="h1s">
                     <ul className='headingText'>
@@ -91,13 +75,13 @@ const Home = () => {
                 <div className="internshipsChunk">
                     <div className="internshipCard">
                         <div>
-                            <img src={godaddy} alt="JP Morgan Chase" />
-                            <p className='bold2'><span className='bold '>Upcoming GoDaddy Software Engineer Intern: </span>
+                            <img src={godaddy} alt="GoDaddy" />
+                            <p className='bold2'><span className='bold '>GoDaddy Software Engineer Intern: </span>
                                 <br />
-                                I'm grateful to announce that I will be working at GoDaddy as a Software Engineer Intern in the Summer of 2023. I will be working in their cart team to help with the checkout infrastructure in Seattle.
+                                In the Summer of 2023, I spent in Seattle, Washington, being a full stack developer on GoDaddy's checkout team. Every day I implemented, I developed features to be tested to see if they made the cart a more seamless experience. GoDaddy's cart is essential to the business success. Every day, the cart has tens of thousands of visitors; even a small mistake could have a large financial impact on the business. Writing high-quality and bug-free code was essential to the team's success. 
                             </p>
                         </div>
-                        <p>Summer 2023</p>
+                        <p className='internshipDate'>Summer 2023</p>
                     </div>
                     <div className="internshipCard">
                         <div>
@@ -107,7 +91,7 @@ const Home = () => {
                                 In the Summer of 2022, I spent in Chicago working at JPMorgan as a Software Developer Intern. I was tasked with converting two legacy UI applications in Ember JS to React.js. This conversion involved 12 API calls, 90% test coverage with Jest, implementing a dark theme, and using their React toolkit. I grew immensely as a developer by learning the React ecosystem and programming with a team.
                             </p>
                         </div>
-                        <p>Summer 2022</p>
+                        <p className='internshipDate'>Summer 2022</p>
                     </div>
                 </div>
             </div>
@@ -124,14 +108,15 @@ const Home = () => {
                         <h2 id="codeh2">Programming</h2>
                         <hr id='hr2' />
                     </div>
-                    <h4> React - Typescript - Mongo - NodeJS - Python - Manifest V3 - Java - React Native</h4>
+                    <h4> React - LLMs - Typescript - Python - Java - NodeJS - SQL</h4>
                 </div>
-
                 <div id="codingChunks">
-                    <img src={left} className='chevron' onClick={rotateProjectsLeft} />
-                    <Card text={projects[0].text} isVideo={projects[0].isVideo} links={projects[0].links} image={projects[0].image} title={projects[0].title} />
-                    <Card text={projects[1].text} isVideo={projects[1].isVideo} links={projects[1].links} image={projects[1].image} title={projects[1].title} />
-                    <img src={right} className='chevron' onClick={rotateProjectsRight} />
+                    {
+                        myProjects.map((project, index) => {
+                            return <Card text={project.text} isVideo={project.isVideo} links={project.links} image={project.image} title={project.title} />
+                        }
+                        )
+                    }
                 </div>
                 <div class="custom-shape-divider-bottom-1645907450">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -148,18 +133,15 @@ const Home = () => {
                 </div>
                 <div className="ts section">
                     <img src={TechstarsLogo} alt="ts" id="tsLogo" />
-                    <div className="tsInside holderDiv" >
+                    <div className="holderDiv" >
                         <img src={fullTS} alt="ts" id="bigTs" />
                         <p>Techstars is a tech startup accelerator that handpicks the ten best companies nationwide
-                            to participate in its three-month growth program. Techstars gives these companies advice, resources,
-                            and a renowned network. I
-                            worked with two of these cohorts through the Des Moines Location, making each company a financial
+                            to participate in its three-month growth program. I worked with two of these cohorts 
+                            through the Des Moines Location, making each company a financial
                             model. These models created adjustable five-year
                             forecasts of the company's income statement, cash flow, and balance sheet. Additionally,
-                            I built out our company sourcing funnel, sending cold our reach and facilitating
-                            interviews. This position exploded my passion and knowledge about the tech startup ecosystem.
-                            Special thank
-                            you to <a href="https://www.linkedin.com/in/kertylevy/">Kerty Levy</a>, <a
+                            I streamlined our company's sourcing funnel and facilitated
+                            interviews. Thank you to <a href="https://www.linkedin.com/in/kertylevy/">Kerty Levy</a>, <a
                                 href="https://benmcdougal.com/">Ben McDougal</a>, and <a
                                     href="https://www.linkedin.com/in/tjsalyars/">TJ Salyars</a> for their mentorship. <br />
                             <br /> Aug 2020 - Dec 2021
@@ -168,7 +150,7 @@ const Home = () => {
                 </div>
                 <div className="speechify section">
                     <h3 id="speechH3">Speechify</h3>
-                    <div className="tsInside holderDiv">
+                    <div className="holderDiv">
                         <p id="speechifyText"> Speechify is a chrome extension that reads text information on websites, and
                             their
                             voices are
@@ -183,7 +165,7 @@ const Home = () => {
                 </div>
                 <div className="ts section">
                     <h3 id="iowaH3">The University of Iowa</h3>
-                    <div className="tsInside holderDiv" >
+                    <div className="holderDiv" >
                         <img src={iowa} alt="ts" id="speechifyImg" />
                         <div className="iowaDiv">
                             <ul>
@@ -191,7 +173,7 @@ const Home = () => {
                                 <li>BBA Business Analytics 🧑‍🎓</li>
                                 <li>I dabble in pickleball 🏃‍♂️</li>
                             </ul>
-                            <ul style={{ marginLeft: '80px' }}>
+                            <ul className='bigMarginlEft'>
                                 <li>Used to Run a Bit 🏃‍♂️</li>
                                 <li>Eagle Scout 🦅</li>
                                 <li>5th Grade Chess Champion ♟</li>

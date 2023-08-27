@@ -787,8 +787,8 @@ h5 {
     }
 
     #bigTs {
-        width: 65%;
-        height: 65%;
+        width: 150px;
+        height: 150px;
         border-radius: 25%;
         padding-right: 0px;
         margin-bottom: 20px;
@@ -799,8 +799,8 @@ h5 {
     }
 
     #speechifyImg {
-        width: 65%;
-        height: 65%;
+        width: 150px;
+        height: 150px;
         margin-top: 20px;
     }
 

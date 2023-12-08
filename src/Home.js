@@ -1,24 +1,41 @@
 import React from 'react';
 import './Home.css';
 
-import { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import swipe from './images/swipe.mov'
+import { useState, useRef } from 
+'react';
+import Work from './components/Work';
+import workExperience from './constants/work';
 import myProjects from './constants/projects';
 import Card from './components/Card';
 
 import PatrickPhoto from './images/full2.jpeg'
-import TechstarsLogo from './images/techstars-logo-vector.png'
-import SpeechifyLogo from './images/speechify.png'
-import fullTS from './images/fullTS.JPG'
-import jp from './images/jp.jpeg'
-import godaddy from './images/gd.png'
-import iowa from './images/iowa.png'
 import face from './images/face.JPG'
 import copy from './images/copy.png'
 import hand from './images/hand.png'
+import linkedin from './images/linkedin.svg'
 
 const Home = () => {
+    console.log(workExperience);
+    const [projectsToShow, setProjectsToShow] = useState(myProjects.slice(0, 2));
+    const [currentWorkExperience, setCurrentWorkExperience] = useState(workExperience.slice(0, 2));
+
+    const toggleWorkExperience = () => {
+        if (currentWorkExperience.length === 2) {
+            setCurrentWorkExperience(workExperience);
+        }
+        else {
+            setCurrentWorkExperience(workExperience.slice(0, 2));
+        }
+    }
+
+    const toggleProjects = () => {
+        if (projectsToShow.length === 2) {
+            setProjectsToShow(myProjects);
+        } else {
+            setProjectsToShow(myProjects.slice(0, 2));
+        }
+    }
+
     const inputEl = useRef(null);
     const copyTextEl = useRef(null);
 
@@ -32,7 +49,6 @@ const Home = () => {
             copyTextEl.current.classList.remove("active");
         }, 2500);
     };
-
 
 
 
@@ -66,33 +82,21 @@ const Home = () => {
                 <div style={{
                     width: "94%",
                     marginLeft: "3%",
-                    marginBottom: '150px',
-                    marginTop: '50px'
+                    marginBottom: '30px',
+                    marginTop: '30px'
                 }}>
-                    <h2>Software Internships </h2>
+                    <div className='codeHeaderHolder'>
+                            <h2>Expereince</h2>
+                            <button onClick={toggleWorkExperience}>Show {currentWorkExperience.length == 2 ? 'All Expereince ⬇️' : 'Less'}</button>
+                    </div>
                     <hr id='hr1' />
                 </div>
                 <div className="internshipsChunk">
-                    <div className="internshipCard">
-                        <div>
-                            <img src={godaddy} alt="GoDaddy" />
-                            <p className='bold2'><span className='bold '>GoDaddy Software Engineer Intern: </span>
-                                <br />
-                                In the Summer of 2023, I spent in Seattle, Washington, being a full stack developer on GoDaddy's checkout team. Every day I implemented, I developed features to be tested to see if they made the cart a more seamless experience. GoDaddy's cart is essential to the business success. Every day, the cart has tens of thousands of visitors; even a small mistake could have a large financial impact on the business. Writing high-quality and bug-free code was essential to the team's success. 
-                            </p>
-                        </div>
-                        <p className='internshipDate'>Summer 2023</p>
-                    </div>
-                    <div className="internshipCard">
-                        <div>
-                            <img src={jp} alt="JP Morgan Chase" />
-                            <p className='bold2'><span className='bold '>J.P. Morgan Chase Software Engineer Intern:</span>
-                                <br />
-                                In the Summer of 2022, I spent in Chicago working at JPMorgan as a Software Developer Intern. I was tasked with converting two legacy UI applications in Ember JS to React.js. This conversion involved 12 API calls, 90% test coverage with Jest, implementing a dark theme, and using their React toolkit. I grew immensely as a developer by learning the React ecosystem and programming with a team.
-                            </p>
-                        </div>
-                        <p className='internshipDate'>Summer 2022</p>
-                    </div>
+                    {currentWorkExperience.map((work) => {
+                        return (
+                        <Work title={work.title} text={work.text} image={work.image} timeLine={work.timeLine} key={work.title}/>
+                        )
+                    })}
                 </div>
             </div>
             <div className="codeSect" style={{ position: "relative" }}>
@@ -105,82 +109,30 @@ const Home = () => {
                 </div>
                 <div className="codeSectInside">
                     <div id="codeTop">
-                        <h2 id="codeh2">Programming</h2>
+                        <div className='codeHeaderHolder'>
+                            <h2 id="codeh2">Projects</h2>
+                            <button onClick={toggleProjects}>Show {projectsToShow.length == 2 ? 'All Projects ⬇️' : 'Less'}</button>
+                        </div>
                         <hr id='hr2' />
                     </div>
-                    <h4> React - LLMs - Typescript - Python - Java - NodeJS - SQL</h4>
                 </div>
                 <div id="codingChunks">
                     {
-                        myProjects.map((project, index) => {
-                            return <Card text={project.text} isVideo={project.isVideo} links={project.links} image={project.image} title={project.title} />
+                        projectsToShow.map((project, index) => {
+                            return <Card text={project.text} isVideo={project.isVideo} links={project.links} image={project.image} title={project.title} key={project.title}/>
                         }
                         )
                     }
                 </div>
-                <div class="custom-shape-divider-bottom-1645907450">
+                <div className="custom-shape-divider-bottom-1645907450">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                         preserveAspectRatio="none">
                         <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z"
-                            class="shape-fill"></path>
+                            className="shape-fill"></path>
                     </svg>
                 </div>
             </div >
-            <div class="teenager" style={{ position: "relative" }}>
-                <div class='teenageTopStuff'>
-                    <h2>Business & School</h2>
-                    <hr id='hr1' />
-                </div>
-                <div className="ts section">
-                    <img src={TechstarsLogo} alt="ts" id="tsLogo" />
-                    <div className="holderDiv" >
-                        <img src={fullTS} alt="ts" id="bigTs" />
-                        <p>Techstars is a tech startup accelerator that handpicks the ten best companies nationwide
-                            to participate in its three-month growth program. I worked with two of these cohorts 
-                            through the Des Moines Location, making each company a financial
-                            model. These models created adjustable five-year
-                            forecasts of the company's income statement, cash flow, and balance sheet. Additionally,
-                            I streamlined our company's sourcing funnel and facilitated
-                            interviews. Thank you to <a href="https://www.linkedin.com/in/kertylevy/">Kerty Levy</a>, <a
-                                href="https://benmcdougal.com/">Ben McDougal</a>, and <a
-                                    href="https://www.linkedin.com/in/tjsalyars/">TJ Salyars</a> for their mentorship. <br />
-                            <br /> Aug 2020 - Dec 2021
-                        </p>
-                    </div>
-                </div>
-                <div className="speechify section">
-                    <h3 id="speechH3">Speechify</h3>
-                    <div className="holderDiv">
-                        <p id="speechifyText"> Speechify is a chrome extension that reads text information on websites, and
-                            their
-                            voices are
-                            nearly indistinguishable from human voices. Unsurprisingly, they have
-                            hockey puck growth and are hiring like crazy. I was fortunate enough to be a part of that team
-                            scaling Speechify. Every day I built relationships with news applicants, helping to hire top talent.
-                            <br /> <br /> Dec 2021 - Mar 2022
-                        </p>
-                        <img src={SpeechifyLogo} alt="ts" id="speechifyImg" />
-
-                    </div>
-                </div>
-                <div className="ts section">
-                    <h3 id="iowaH3">The University of Iowa</h3>
-                    <div className="holderDiv" >
-                        <img src={iowa} alt="ts" id="speechifyImg" />
-                        <div className="iowaDiv">
-                            <ul>
-                                <li>Studying Comp Sci B.S. 📚</li>
-                                <li>BBA Business Analytics 🧑‍🎓</li>
-                                <li>I dabble in pickleball 🏃‍♂️</li>
-                            </ul>
-                            <ul className='bigMarginlEft'>
-                                <li>Used to Run a Bit 🏃‍♂️</li>
-                                <li>Eagle Scout 🦅</li>
-                                <li>5th Grade Chess Champion ♟</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div className="teenager" style={{ position: "relative" }}>
                 <div className="custom-shape-divider-bottom-1645906604">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                         preserveAspectRatio="none">
@@ -196,23 +148,29 @@ const Home = () => {
                     </svg>
                 </div>
             </div>
-            <div class="bott">
-                <div class="goodbye">
+            <div className="bott">
+                <div className="goodbye">
                     <div id='waveDiv'>
-                        <h1 class="toph1">Bye!</h1>
-                        <img src={hand} alt="" class='wave' />
+                        <h1 className="toph1">Bye!</h1>
+                        <img src={hand} alt="" className='wave' />
                     </div>
                     <img src={face} alt="goodbye photo" id="byeImg" />
                 </div>
-                <div class="container">
-                    <div class="label">
-                        <h5>Contact:</h5>
+                <div className="container">
+                    <div className="label">
+                        <h5>Lets Get in Touch:</h5>
                     </div>
-                    <div class="copy-text" ref={copyTextEl}>
-                        <input type="text" class="text" value='patrick.123.foster@gmail.com' ref={inputEl} readonly />
-                        <button onClick={handleCopyClick}>
-                            <img src={copy} alt="vlaid" id='copyImage' />
-                        </button>
+                    <div className='contact-container'>
+                        <div className="copy-text" ref={copyTextEl}>
+                            <input type="text" className="text" value='patrick.123.foster@gmail.com' ref={inputEl} readonly />
+                            <button onClick={handleCopyClick}>
+                                <img src={copy} alt="vlaid" id='copyImage' />
+                            </button>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 512 512" id='linkedin' 
+                                        onClick={() => {window.open('https://www.linkedin.com/in/patrickrfoster', '_blank')}}>
+                        <path d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z" className='shape-fill-white'/>
+                    </svg>
                     </div>
                 </div>
             </div>

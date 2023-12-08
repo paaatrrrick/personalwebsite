@@ -122,18 +122,17 @@ ul.headingText li a:hover::before {
 }
 
 .internshipsChunk {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 0px 60px;
     margin-bottom: 150px;
 }
 
 .internshipCard {
-    width: 40%;
+    width: 90%;
     max-width: 700px;
-    height: 700px;
+    height: 550px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -288,18 +287,44 @@ h4 {
     align-items: center;
 }
 
-#codeh2 {
+.codeHeaderHolder{
     padding-top: 2rem;
     margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.codeHeaderHolder button{
+    color: #fff;
+    background-color: #4C3AFF;
+    font-size: 18px;
+    border-radius: 36px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 20px 50px 0px rgba(254, 254, 254, 0.2);
+}
+
+
+.codeHeaderHolder button:hover{
+    cursor: pointer;
+    background-color: #362e95;
+}
+
+#codeh2 {
     color: white;
 }
 
 #codingChunks {
-    /* width: 100%; */
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-    grid-template-rows: repeat(4, 1fr); /* Seven rows */
-    gap: 60px; /* Gap between grid items */
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
     padding: 0px 60px;
 }
 
@@ -692,8 +717,41 @@ h5 {
     margin-left: 80px;
 }
 
+.internshipDate{
+    font-style: italic;
+}
+
+#linkedin:hover{
+    cursor: pointer;
+}
+
+#linkedin:hover .shape-fill-white{
+    fill: rgb(181,226,226);
+}
+
+
+.shape-fill-white{
+    fill: white;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 
 @media only screen and (max-width: 900px) {
+
+    .codeHeaderHolder button{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
 
     .internshipsChunk{
         margin-top: -100px;
@@ -715,6 +773,20 @@ h5 {
         grid-template-rows: repeat(8, 1fr); /* Seven rows */
         gap: 20px; /* Gap between grid items */
         padding: 0px 0px;
+        margin: 1rem 2rem 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .internshipsChunk{
+        grid-template-rows: repeat(8, 1fr); /* Seven rows */
+        gap: 20px; /* Gap between grid items */
+        padding: 0px 0px;
+        margin: 1rem 2rem 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .codingChunk-content p{
@@ -778,7 +850,7 @@ h5 {
     
     }    
     h2 {
-        font-size: 10vw;
+        font-size: 8vw;
     }
 
     #tsLogo {
@@ -814,13 +886,6 @@ h5 {
 
     .codeSectInside {
         margin: 2rem 2rem 4rem 2rem;
-    }
-
-    #codingChunks {
-        margin: 1rem 2rem 1rem 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .codingChunk {

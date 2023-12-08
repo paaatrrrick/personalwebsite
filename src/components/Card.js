@@ -1,6 +1,5 @@
 const Card = (props) => {
     const { text, image, title, isVideo, links } = props;
-    console.log(isVideo);
     return (
         <div className="codingChunk">
             <div className="codingChunk-content">
@@ -11,8 +10,16 @@ const Card = (props) => {
                         : <img src={image} className="codingImage" />}
                     <p className='codingParagraph'><span className='bold'>{title}: </span>
                         <br />
+                        <>
+                        {text.map((paragraph) => {
+                            return (
+                                <>
+                                {paragraph}<br/>
+                                </>
+                            )
 
-                        {text}
+                        })}
+                        </>
                     </p>
                 </div>
 

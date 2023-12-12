@@ -1,7 +1,7 @@
 const myProjects = [
     {
         title: '🐣 Courser',
-        text: ['ChatGPT for University classrooms', '- Won HackUIowa 2023', '- First Place JPECC Tech Pitch Competition', '- ERA Startup Accelerator Finalist'],
+        text: ['ChatGPT for University classrooms', '- Won HackUIowa 2023', '- First Place in Tech for JPECC Pitch Competition', '- ERA Startup Accelerator Finalist'],
         image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1702057000/Untitled_design_y9npsz.png",
         isVideo: false,
         links: [

@@ -8,11 +8,10 @@ import workExperience from './constants/work';
 import myProjects from './constants/projects';
 import Card from './components/Card';
 
-import PatrickPhoto from './images/full2.jpeg'
-import face from './images/face.JPG'
-import copy from './images/copy.png'
-import hand from './images/hand.png'
-import linkedin from './images/linkedin.svg'
+import PatrickPhoto from './images/full2.jpeg';
+import face from './images/face.JPG';
+import copy from './images/copy.png';
+import hand from './images/hand.png';
 
 const Home = () => {
     console.log(workExperience);

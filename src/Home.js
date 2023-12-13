@@ -87,8 +87,8 @@ const Home = () => {
                     marginTop: '30px'
                 }}>
                     <div className='codeHeaderHolder'>
-                            <h2>Expereince</h2>
-                            <button onClick={toggleWorkExperience}>Show {currentWorkExperience.length == 2 ? 'All Expereince ⬇️' : 'Less'}</button>
+                            <h2>Experiences</h2>
+                            <button onClick={toggleWorkExperience}>Show {currentWorkExperience.length == 2 ? 'All Experiences ⬇️' : 'Less'}</button>
                     </div>
                     <hr id='hr1' />
                 </div>

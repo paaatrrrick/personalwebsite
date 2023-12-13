@@ -122,6 +122,23 @@ ul.headingText li a:hover::before {
     width: 100%;
 }
 
+.busSectTopHolder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.busSectHeader{
+    width: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .internshipsChunk {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -218,6 +235,7 @@ hr {
 #hr1 {
     background: rgb(67, 206, 162);
     background: linear-gradient(90deg, rgba(67, 206, 162, 1) 0%, rgba(24, 90, 157, 1) 85%);
+    width: 100%;
 }
 
 #hr2 {
@@ -277,12 +295,12 @@ h4 {
 
 .codeSect {
     background-color: #212529;
-    padding: 2rem 0rem 12rem 0rem;
+    padding: 2rem 0px 12rem 0px;
 }
 
 .codeSectInside {
-    margin: 2rem 6rem 4rem 6rem;
-
+    margin: 2rem 0rem 4rem 0rem;
+    padding: 0px 60px;
     display: flex;
     flex-direction: column;
     align-items: center;

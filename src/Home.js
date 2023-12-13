@@ -80,17 +80,15 @@ const Home = () => {
                 </svg>
             </div>
             <div className="busSect">
-                <div style={{
-                    width: "94%",
-                    marginLeft: "3%",
-                    marginBottom: '30px',
-                    marginTop: '30px'
-                }}>
-                    <div className='codeHeaderHolder'>
-                            <h2>Experiences</h2>
-                            <button onClick={toggleWorkExperience}>Show {currentWorkExperience.length == 2 ? 'All Experiences ⬇️' : 'Less'}</button>
+                <div className='busSectTopHolder'>
+                    <div className="busSectHeader">
+                        <div className='codeHeaderHolder'>
+                                <h2>Experiences</h2>
+                                <button onClick={toggleWorkExperience}>Show {currentWorkExperience.length == 2 ? 'All Experiences ⬇️' : 'Less'}</button>
+                        </div>
+                        <hr id='hr1' />
                     </div>
-                    <hr id='hr1' />
+                    
                 </div>
                 <div className="internshipsChunk">
                     {currentWorkExperience.map((work) => {

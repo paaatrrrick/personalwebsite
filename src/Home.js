@@ -8,7 +8,7 @@ import workExperience from './constants/work';
 import myProjects from './constants/projects';
 import Card from './components/Card';
 
-import PatrickPhoto from './images/full2.jpeg';
+import PatrickPhoto from './images/full.jpg';
 import face from './images/face.JPG';
 import copy from './images/copy.png';
 import hand from './images/hand.png';
@@ -84,7 +84,7 @@ const Home = () => {
                     <div className="busSectHeader">
                         <div className='codeHeaderHolder'>
                                 <h2>Experiences</h2>
-                                <button onClick={toggleWorkExperience}>Show {currentWorkExperience.length == 2 ? 'All Experiences ⬇️' : 'Less'}</button>
+                                <button onClick={toggleWorkExperience}>Show {currentWorkExperience.length === 2 ? 'All Experiences ⬇️' : 'Less'}</button>
                         </div>
                         <hr id='hr1' />
                     </div>
@@ -110,7 +110,7 @@ const Home = () => {
                     <div id="codeTop">
                         <div className='codeHeaderHolder'>
                             <h2 id="codeh2">Projects</h2>
-                            <button onClick={toggleProjects}>Show {projectsToShow.length == 2 ? 'All Projects ⬇️' : 'Less'}</button>
+                            <button onClick={toggleProjects}>Show {projectsToShow.length === 2 ? 'All Projects ⬇️' : 'Less'}</button>
                         </div>
                         <hr id='hr2' />
                     </div>

@@ -97,9 +97,9 @@ ul.headingText li a:hover::before {
 
 #fullBody {
     margin: 4rem 2rem 4rem 0;
-    width: 440px;
-    height: 660px;
-    border-radius: 1%;
+    width: 350px;
+    height: 350px;
+    border-radius: 45%;
 }
 
 
@@ -117,7 +117,7 @@ ul.headingText li a:hover::before {
 .busSect {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     width: 100%;
 }
@@ -157,7 +157,6 @@ ul.headingText li a:hover::before {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.2);
-
 }
 
 .internshipCard>div {
@@ -592,7 +591,7 @@ h5 {
 }
 
 .copy-text button {
-    background: #5569d4;
+    background: #4c3aff;
     color: #fff;
     font-size: 20px;
     border: none;
@@ -606,7 +605,7 @@ h5 {
 }
 
 .copy-text button:active {
-    background: #5569d4;
+    background: #4c3aff;
 }
 
 .copy-text button:before {
@@ -614,7 +613,7 @@ h5 {
     position: absolute;
     top: -45px;
     right: 0px;
-    background: #5569d4;
+    background: #4c3aff;
     padding: 8px 10px;
     border-radius: 20px;
     font-size: 15px;
@@ -628,7 +627,7 @@ h5 {
     right: 25px;
     width: 10px;
     height: 10px;
-    background: #5569d4;
+    background: #4c3aff;
     transform: rotate(45deg);
     display: none;
 }
@@ -866,10 +865,8 @@ h5 {
     }
 
     #fullBody {
-        margin: 1rem 1rem 8rem 1rem;
-        width: 80vw;
-        height: 125vw;
-        border-radius: 10% 30% 10% 30%;
+        max-width: 95vw;
+        max-height: 95vw;
     }
 
 

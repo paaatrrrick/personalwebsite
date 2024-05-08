@@ -7,7 +7,7 @@ const workExperience = [
     },
     {
         title: 'GoDaddy Software Engineer Intern:',
-        text: `A/B Tested features on GoDaddy's Checkout Page. Lead to a projected $1.8 Million increase in ARR.`,
+        text: `A/B Tested features on GoDaddy's Checkout Page.`,
         image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1702062289/gd_zdghmr.png",
         timeLine: 'May - August 2023. Seattle, WA',
     },

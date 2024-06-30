@@ -27,16 +27,16 @@ const myProjects = [
             text: 'Chrome Extension', href: 'https://chrome.google.com/webstore/detail/wordsmith/ffjginbaonjceegjiapjgopplicfpbcm'
         }]
     },
-    {
-        title: 'Open-Source, LangChain 🦜🔗',
-        text: ["I contributed to the largest LLM framework by incorporating two extra generative AI models. I also enhanced the model's capabilities by configuring hyperparameters, implementing result caching, and introducing stop sequences. Used Generative AI, Open Source, and Typescript."],
-        image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1693161316/Untitled_design_1_aiak8g.png",
-        isVideo: false,
-        links: [
-        {
-            text: 'Github', href: 'https://github.com/hwchase17/langchainjs'
-        }]
-    },
+    // {
+    //     title: 'Open-Source, LangChain 🦜🔗',
+    //     text: ["I contributed to the largest LLM framework by incorporating two extra generative AI models. I also enhanced the model's capabilities by configuring hyperparameters, implementing result caching, and introducing stop sequences. Used Generative AI, Open Source, and Typescript."],
+    //     image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1693161316/Untitled_design_1_aiak8g.png",
+    //     isVideo: false,
+    //     links: [
+    //     {
+    //         text: 'Github', href: 'https://github.com/hwchase17/langchainjs'
+    //     }]
+    // },
     {
         title: `World's Best Boilerplate`,
         text: ["Boilerplate for any fullstack web app", "- Authentication", '- Navbar', '- Error Handling', '- Database'],
@@ -49,18 +49,18 @@ const myProjects = [
             text: 'Github', href: 'https://github.com/paaatrrrick/boilerplate'
         }]
     },
-    {
-        title: 'Autonomous SEO Auto-blogger',
-        text: ["BloggerGPT was designed as an AI that could connect to your WordPress account and write blogs promoting your brand. It did keyword research, blog posts were styled, included images, and would link to one another. It had 350 users, over 3000 posts created, and five paying customers. Used Generative AI, React, Tailwind, Node.js, Express, and MongoDB."],
-        image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1693161316/Untitled_design_dqqmfg.png",
-        isVideo: false,
-        links: [{
-            text: 'Website', href: 'https://langface.ai/'
-        },
-        {
-            text: 'Github', href: 'https://github.com/paaatrrrick/langface'
-        }]
-    },
+    // {
+    //     title: 'Autonomous SEO Auto-blogger',
+    //     text: ["BloggerGPT was designed as an AI that could connect to your WordPress account and write blogs promoting your brand. It did keyword research, blog posts were styled, included images, and would link to one another. It had 350 users, over 3000 posts created, and five paying customers. Used Generative AI, React, Tailwind, Node.js, Express, and MongoDB."],
+    //     image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1693161316/Untitled_design_dqqmfg.png",
+    //     isVideo: false,
+    //     links: [{
+    //         text: 'Website', href: 'https://langface.ai/'
+    //     },
+    //     {
+    //         text: 'Github', href: 'https://github.com/paaatrrrick/langface'
+    //     }]
+    // },
     // {
     //     title: 'Sum thing summarized',
     //     text: ['Sum thing summarized was our project for the 2022 UIowa Hackathon, where our team placed third. Sum thing summarized is a chrome extension that allows users to summarize any webpage they are on. It also generated quiz questions based on their content.'],

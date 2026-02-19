@@ -1,5 +1,11 @@
 const workExperience = [
     {
+        title: 'Mintlify Software Engineer:',
+        text: `Making docs better in the world`,
+        image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1702068076/Untitled_design_5_nxkpho.png",
+        timeLine: 'October 2026. San Fransico, CA',
+    },
+    {
         title: 'Netflix Software Engineer:',
         text: `Coming To Theaters Near You!`,
         image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1702068076/Untitled_design_5_nxkpho.png",

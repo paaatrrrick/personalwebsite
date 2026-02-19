@@ -1,6 +1,6 @@
 const workExperience = [
    {
-        title: 'Netflix Software Engineer:',
+        title: 'Netflix Software Engineer eieieie ooo:',
         text: `Coming To Theaters Near You!`,
         image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1702068076/Untitled_design_5_nxkpho.png",
         timeLine: 'Starting June 2024. Los Gatos, CA',

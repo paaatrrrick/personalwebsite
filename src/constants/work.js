@@ -1,5 +1,10 @@
 const workExperience = [
     {
+        title: 'Anthropic Software engineer',
+        text: `Making agi come to fruition`,
+        timeLine: 'Incoming. NYC',
+    },
+    {
         title: 'Mintlify Software Engineer:',
         text: `Making docs better in the world`,
         image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1702068076/Untitled_design_5_nxkpho.png",

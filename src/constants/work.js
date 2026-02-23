@@ -1,4 +1,8 @@
 const workExperience = [
+    {
+        title: 'Software engineer at Mintlify!',
+        text: `Coming To Theaters Near You!`,
+    },
    {
         title: 'Netflix Software Engineer eieieie ooo:',
         text: `Coming To Theaters Near You!`,

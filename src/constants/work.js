@@ -1,6 +1,6 @@
 const workExperience = [
     {
-        title: 'Anthropic Software engineer',
+        title: 'OpenAI Software engineer',
         text: `Making agi come to fruition`,
         timeLine: 'Incoming. NYC',
     },

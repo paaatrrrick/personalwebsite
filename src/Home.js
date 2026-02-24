@@ -17,7 +17,7 @@ const Home = () => {
     console.log(workExperience);
     const [projectsToShow, setProjectsToShow] = useState(myProjects.slice(0, 2));
     const [currentWorkExperience, setCurrentWorkExperience] = useState(workExperience.slice(0, 2));
-
+    console.log('yo')
     const toggleWorkExperience = () => {
         if (currentWorkExperience.length === 2) {
             setCurrentWorkExperience(workExperience);

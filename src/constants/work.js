@@ -1,22 +1,5 @@
 const workExperience = [
     {
-        title: 'OpenAI Software engineer',
-        text: `Making agi come to fruition`,
-        timeLine: 'Incoming. NYC',
-    },
-    {
-        title: 'Mintlify Software Engineer:',
-        text: `Making docs better in the world`,
-        image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1702068076/Untitled_design_5_nxkpho.png",
-        timeLine: 'October 2026. San Fransico, CA',
-    },
-    {
-        title: 'Netflix Software Engineer:',
-        text: `Coming To Theaters Near You!`,
-        image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1702068076/Untitled_design_5_nxkpho.png",
-        timeLine: 'Starting June 2024. Los Gatos, CA',
-    },
-    {
         title: 'GoDaddy Software Engineer Intern:',
         text: `A/B Tested features on GoDaddy's Checkout Page.`,
         image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1702062289/gd_zdghmr.png",

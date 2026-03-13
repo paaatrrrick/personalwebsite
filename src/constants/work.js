@@ -1,8 +1,5 @@
 const workExperience = [
     {
-        title: 'OpenAI Researcher',
-    },
-    {
         title: 'Netlflix Software Engineer (update docs to refelect thsi)',
     },
     {

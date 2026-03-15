@@ -16,7 +16,7 @@ const workExperience = [
     },
     {
         title: 'J.P. Morgan Chase Software Engineer Intern:',
-        text: `Helped investment bankers maintain regulatory compliance by modernizing two websites to React.`,
+        text: `Helped investment bankers maintain regulatory compliance by modernizing two websites to React.`, // six
         image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1702062290/jp_hpv7ac.jpg",
         timeLine: 'June - August 2022. Chicago, IL',
     },

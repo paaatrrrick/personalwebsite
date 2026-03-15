@@ -1,5 +1,13 @@
 const workExperience = [
     {
+        title: 'Father',
+        timeLine: '2028. Seattle, WA',
+    },
+    {
+        title: 'Goose farmer',
+        timeLine: 'May - August 2027. Seattle, WA',
+    },
+    {
         title: 'Founder at a stealth startup',
         timeLine: 'May - August 2026. Seattle, WA',
     },

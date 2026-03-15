@@ -1,9 +1,5 @@
 const workExperience = [
     {
-        title: 'Father',
-        timeLine: '2028. Seattle, WA',
-    },
-    {
         title: 'Goose farmer',
         timeLine: 'May - August 2027. Seattle, WA',
     },

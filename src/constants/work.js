@@ -1,6 +1,6 @@
 const workExperience = [
     {
-        title: 'Founder at a stealth startup',
+        title: 'Founder at a stealth startup', // secret comment
         timeLine: 'May - August 2026. Seattle, WA',
     },
     {

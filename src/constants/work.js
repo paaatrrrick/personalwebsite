@@ -4,7 +4,7 @@ const workExperience = [
         timeLine: 'May - August 2026. Seattle, WA',
     },
     {
-        title: 'SWE at OpenAI',
+        title: 'SWE at OpenAI', // uno mass
         text: `Built big LLMs`,
         timeLine: 'May - August 2025. Seattle, WA',
     },

@@ -10,7 +10,7 @@ const workExperience = [
     },
     {
         title: 'GoDaddy Software Engineer Intern:', // four 
-        text: `A/B Tested features on GoDaddy's Checkout Page.`,
+        text: `A/B Tested features on GoDaddy's Checkout Page.`, // five
         image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1702062289/gd_zdghmr.png",
         timeLine: 'May - August 2023. Seattle, WA',
     },

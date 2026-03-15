@@ -1,5 +1,10 @@
 const workExperience = [
     {
+        title: 'SWE at OpenAI',
+        text: `Built big LLMs`,
+        timeLine: 'May - August 2025. Seattle, WA',
+    },
+    {
         title: 'GoDaddy Software Engineer Intern:',
         text: `A/B Tested features on GoDaddy's Checkout Page.`,
         image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1702062289/gd_zdghmr.png",

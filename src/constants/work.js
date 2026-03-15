@@ -6,7 +6,7 @@ const workExperience = [
     {
         title: 'SWE at OpenAI', // uno mass
         text: `Built big LLMs`, // dos
-        timeLine: 'May - August 2025. Seattle, WA',
+        timeLine: 'May - August 2025. Seattle, WA', // three
     },
     {
         title: 'GoDaddy Software Engineer Intern:',

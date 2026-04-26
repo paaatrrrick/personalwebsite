@@ -11,12 +11,12 @@ const workExperience = [
     },
     {
         title: 'SWE at Anthropic',
-        text: `Built Claude.`,
+        text: `Built Claude. Contributed to model training infrastructure and improved evaluation pipelines for safer model releases. Collaborated with researchers across the alignment and pretraining teams.`,
         timeLine: 'May - August 2026. San Francisco, CA',
     },
     {
         title: 'SWE at Stripe',
-        text: `Worked on payments infrastructure.`,
+        text: `Worked on payments infrastructure. Helped build and ship features on the core payments API, with a focus on reliability and latency. Partnered with the platform team on internal tooling that streamlined deploys.`,
         timeLine: 'May - August 2024. San Francisco, CA',
     },
     {

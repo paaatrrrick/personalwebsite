@@ -5,6 +5,11 @@ const workExperience = [
         timeLine: 'May - August 2026. San Francisco, CA',
     },
     {
+        title: 'SWE at Stripe',
+        text: `Worked on payments infrastructure.`,
+        timeLine: 'May - August 2024. San Francisco, CA',
+    },
+    {
         title: 'SWE at OpenAI',
         text: `Built big LLMs`,
         timeLine: 'May - August 2025. Seattle, WA',

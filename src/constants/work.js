@@ -1,5 +1,20 @@
 const workExperience = [
     {
+        title: 'SWE at Anthropic',
+        text: `Built Claude.`,
+        timeLine: 'May - August 2026. San Francisco, CA',
+    },
+    {
+        title: 'SWE at Stripe',
+        text: `Worked on payments infrastructure.`,
+        timeLine: 'May - August 2024. San Francisco, CA',
+    },
+    {
+        title: 'SWE at Meta',
+        text: `Worked on Instagram ranking systems.`,
+        timeLine: 'May - August 2023. Menlo Park, CA',
+    },
+    {
         title: 'SWE at OpenAI',
         text: `Built big LLMs`,
         timeLine: 'May - August 2025. Seattle, WA',

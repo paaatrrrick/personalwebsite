@@ -5,6 +5,11 @@ const workExperience = [
         timeLine: 'May - August 2027. Palo Alto, CA',
     },
     {
+        title: 'SWE at SpaceX',
+        text: `Worked on Starlink ground software.`,
+        timeLine: 'May - August 2028. Hawthorne, CA',
+    },
+    {
         title: 'SWE at Anthropic',
         text: `Built Claude.`,
         timeLine: 'May - August 2026. San Francisco, CA',

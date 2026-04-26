@@ -1,5 +1,10 @@
 const workExperience = [
     {
+        title: 'SWE at Anthropic',
+        text: `Built Claude.`,
+        timeLine: 'May - August 2026. San Francisco, CA',
+    },
+    {
         title: 'SWE at OpenAI',
         text: `Built big LLMs`,
         timeLine: 'May - August 2025. Seattle, WA',

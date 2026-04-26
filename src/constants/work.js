@@ -11,7 +11,7 @@ const workExperience = [
     },
     {
         title: 'SWE at Anthropic',
-        text: `Built Claude.`,
+        text: `Built Claude. Contributed to model training infrastructure and improved evaluation pipelines for safer model releases. Collaborated with researchers across the alignment and pretraining teams.`,
         timeLine: 'May - August 2026. San Francisco, CA',
     },
     {

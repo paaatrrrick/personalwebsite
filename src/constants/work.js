@@ -16,7 +16,7 @@ const workExperience = [
     },
     {
         title: 'SWE at Stripe',
-        text: `Worked on payments infrastructure.`,
+        text: `Worked on payments infrastructure. Helped build and ship features on the core payments API, with a focus on reliability and latency. Partnered with the platform team on internal tooling that streamlined deploys.`,
         timeLine: 'May - August 2024. San Francisco, CA',
     },
     {

@@ -1,5 +1,15 @@
 const workExperience = [
     {
+        title: 'Career Sabbatical — Travel & Writing',
+        text: `Took an intentional six-month sabbatical between roles to travel, recharge, and write. Spent the time documenting lessons from prior startup work into a public essay series and reconnecting with what I want my next chapter to look like before jumping back in.`,
+        timeLine: '2030. International',
+    },
+    {
+        title: 'Career Pivot — IC Engineer to Tech Lead',
+        text: `Stepped from an individual contributor track into a tech-lead role on a six-person team. Spent less time writing code and more time reviewing designs, unblocking teammates, and owning quarterly planning. The transition forced me to get sharp about prioritization and async written communication.`,
+        timeLine: '2030 - 2031. San Francisco, CA',
+    },
+    {
         title: 'Career Pivot — Independent Builder',
         text: `Stepped back from full-time engineering roles to spend a year as an independent builder. Shipped two consumer AI side-projects from zero, ran user interviews end-to-end, and used the time to figure out what kind of problems I actually want to spend the next decade on. Coming out the other side I'm focused on small teams shipping AI tooling for developers.`,
         timeLine: '2028 - 2029. Remote',

@@ -1,5 +1,15 @@
 const workExperience = [
     {
+        title: 'Career Pivot — Independent Builder',
+        text: `Stepped back from full-time engineering roles to spend a year as an independent builder. Shipped two consumer AI side-projects from zero, ran user interviews end-to-end, and used the time to figure out what kind of problems I actually want to spend the next decade on. Coming out the other side I'm focused on small teams shipping AI tooling for developers.`,
+        timeLine: '2028 - 2029. Remote',
+    },
+    {
+        title: 'Career Pivot — Engineer to Founding PM',
+        text: `Moved from a pure SWE track into a founding product role at an early-stage startup. Owned the 0-to-1 roadmap, ran weekly customer discovery calls, and translated learnings back into engineering priorities. The pivot reshaped how I think about scope, velocity, and what \"shipped\" actually means.`,
+        timeLine: '2029 - Present. San Francisco, CA',
+    },
+    {
         title: 'SWE at Tesla',
         text: `Worked on Autopilot perception systems.`,
         timeLine: 'May - August 2027. Palo Alto, CA',

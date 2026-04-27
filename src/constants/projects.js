@@ -14,7 +14,7 @@ const myProjects = [
     },
     {
         title: 'AI Writing Assistant',
-        text: ["Wordsmith is a chrome extension that uses GPT to rewrite text on any website to be more efftective by simply highlighting it."],
+        text: ["Wordsmith is a chrome extension that uses GPT to rewrite text on any website to be more effective by simply highlighting it."],
         image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1693158626/wordsmith_z5rsxt.png",
         isVideo: false,
         links: [{

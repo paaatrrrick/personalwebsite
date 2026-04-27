@@ -1,5 +1,10 @@
 const workExperience = [
     {
+        title: 'Career Pivot — Independent Builder',
+        text: `Stepped back from full-time engineering roles to spend a year as an independent builder. Shipped two consumer AI side-projects from zero, ran user interviews end-to-end, and used the time to figure out what kind of problems I actually want to spend the next decade on. Coming out the other side I'm focused on small teams shipping AI tooling for developers.`,
+        timeLine: '2028 - 2029. Remote',
+    },
+    {
         title: 'SWE at Tesla',
         text: `Worked on Autopilot perception systems.`,
         timeLine: 'May - August 2027. Palo Alto, CA',

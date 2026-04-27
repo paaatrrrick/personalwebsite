@@ -5,6 +5,11 @@ const workExperience = [
         timeLine: 'May - August 2031. San Francisco, CA',
     },
     {
+        title: 'SWE at Shopify',
+        text: `Worked on merchant analytics dashboards.`,
+        timeLine: 'May - August 2032. Remote',
+    },
+    {
         title: 'Career Sabbatical — Travel & Writing',
         text: `Took an intentional six-month sabbatical between roles to travel, recharge, and write. Spent the time documenting lessons from prior startup work into a public essay series and reconnecting with what I want my next chapter to look like before jumping back in.`,
         timeLine: '2030. International',

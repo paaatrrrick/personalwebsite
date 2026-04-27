@@ -5,6 +5,11 @@ const workExperience = [
         timeLine: '2028 - 2029. Remote',
     },
     {
+        title: 'Career Pivot — Engineer to Founding PM',
+        text: `Moved from a pure SWE track into a founding product role at an early-stage startup. Owned the 0-to-1 roadmap, ran weekly customer discovery calls, and translated learnings back into engineering priorities. The pivot reshaped how I think about scope, velocity, and what \"shipped\" actually means.`,
+        timeLine: '2029 - Present. San Francisco, CA',
+    },
+    {
         title: 'SWE at Tesla',
         text: `Worked on Autopilot perception systems.`,
         timeLine: 'May - August 2027. Palo Alto, CA',

@@ -1,5 +1,10 @@
 const workExperience = [
     {
+        title: 'SWE at Figma',
+        text: `Worked on the multiplayer canvas sync layer.`,
+        timeLine: 'May - August 2034. San Francisco, CA',
+    },
+    {
         title: 'SWE at Airbnb',
         text: `Worked on the host onboarding flow.`,
         timeLine: 'May - August 2031. San Francisco, CA',

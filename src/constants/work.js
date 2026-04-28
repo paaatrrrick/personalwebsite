@@ -1,5 +1,15 @@
 const workExperience = [
     {
+        title: 'SWE at Vercel',
+        text: `Worked on the edge runtime and deployment pipeline.`,
+        timeLine: 'May - August 2035. Remote',
+    },
+    {
+        title: 'SWE at Linear',
+        text: `Worked on the issue triage workflow.`,
+        timeLine: 'May - August 2036. Remote',
+    },
+    {
         title: 'SWE at Airbnb',
         text: `Worked on the host onboarding flow.`,
         timeLine: 'May - August 2031. San Francisco, CA',

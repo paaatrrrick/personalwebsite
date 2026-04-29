@@ -5,6 +5,16 @@ const workExperience = [
         timeLine: '2026 - Present. San Francisco, CA',
     },
     {
+        title: 'SWE at PostHog',
+        text: `Worked on the product analytics surface, with a focus on funnels and session replay performance for high-volume customers.`,
+        timeLine: 'May - August 2034. Remote',
+    },
+    {
+        title: 'SWE at Supabase',
+        text: `Worked on the Postgres-backed auth service. Shipped improvements to row-level-security tooling and helped tighten the developer experience around social auth providers.`,
+        timeLine: 'May - August 2033. Remote',
+    },
+    {
         title: 'SWE at Vercel',
         text: `Worked on the edge runtime and deployment pipeline.`,
         timeLine: 'May - August 2035. Remote',

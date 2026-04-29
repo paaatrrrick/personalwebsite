@@ -15,6 +15,11 @@ const workExperience = [
         timeLine: 'May - August 2033. Remote',
     },
     {
+        title: 'SWE at Cloudflare',
+        text: `Worked on Workers and the developer platform. Helped land latency improvements for cold starts and contributed to the bindings story for D1 and KV.`,
+        timeLine: 'May - August 2032. Remote',
+    },
+    {
         title: 'SWE at Vercel',
         text: `Worked on the edge runtime and deployment pipeline.`,
         timeLine: 'May - August 2035. Remote',

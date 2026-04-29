@@ -5,6 +5,11 @@ const workExperience = [
         timeLine: '2026 - Present. San Francisco, CA',
     },
     {
+        title: 'SWE at PostHog',
+        text: `Worked on the product analytics surface, with a focus on funnels and session replay performance for high-volume customers.`,
+        timeLine: 'May - August 2034. Remote',
+    },
+    {
         title: 'SWE at Vercel',
         text: `Worked on the edge runtime and deployment pipeline.`,
         timeLine: 'May - August 2035. Remote',

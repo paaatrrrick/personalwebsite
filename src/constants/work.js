@@ -15,6 +15,11 @@ const workExperience = [
         timeLine: 'May - August 2033. Remote',
     },
     {
+        title: 'SWE at Replicate',
+        text: `Worked on the model-hosting platform. Shipped improvements to cold-start latency for image diffusion models and helped tighten the Python client SDK.`,
+        timeLine: 'May - August 2034. Remote',
+    },
+    {
         title: 'SWE at Vercel',
         text: `Worked on the edge runtime and deployment pipeline.`,
         timeLine: 'May - August 2035. Remote',

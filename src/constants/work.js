@@ -5,6 +5,11 @@ const workExperience = [
         timeLine: '2026 - Present. San Francisco, CA',
     },
     {
+        title: 'SWE at Hugging Face',
+        text: `Worked on the inference endpoints platform. Improved cold-start times for transformer models and helped land authoring tooling for community-uploaded model cards.`,
+        timeLine: 'May - August 2035. Remote',
+    },
+    {
         title: 'SWE at PostHog',
         text: `Worked on the product analytics surface, with a focus on funnels and session replay performance for high-volume customers.`,
         timeLine: 'May - August 2034. Remote',

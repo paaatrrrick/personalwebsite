@@ -5,6 +5,11 @@ const workExperience = [
         timeLine: '2026 - Present. San Francisco, CA',
     },
     {
+        title: 'SWE at Modal',
+        text: `Worked on the serverless GPU runtime. Helped land scheduling improvements for batched inference jobs and made the local-to-cloud dev loop faster for ML engineers.`,
+        timeLine: 'May - August 2035. Remote',
+    },
+    {
         title: 'SWE at PostHog',
         text: `Worked on the product analytics surface, with a focus on funnels and session replay performance for high-volume customers.`,
         timeLine: 'May - August 2034. Remote',

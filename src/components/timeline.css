@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap');
+
+.timeline {
+    --tl-yellow: #ffdd1c;
+    --tl-green: #40bb94;
+    --tl-blue: #4567db;
+    --tl-ink: #1c1c28;
+    --tl-muted: #6b6b7b;
+    font-family: 'IBM Plex Mono', monospace;
+    min-height: 100vh;
+    padding: 4rem 1.5rem 6rem;
+    max-width: 880px;
+    margin: 0 auto;
+    color: var(--tl-ink);
+}
+
+.timelineBack {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: var(--tl-blue);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.timelineBack:hover {
+    text-decoration: underline;
+}
+
+.timelineHeader h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+}
+
+.timelineIntro {
+    color: var(--tl-muted);
+    font-size: 1.05rem;
+    max-width: 36rem;
+    line-height: 1.6;
+    margin: 0 0 2rem;
+}
+
+.timelineStats {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.timelineStat {
+    display: flex;
+    flex-direction: column;
+}
+
+.timelineStatNum {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--tl-green);
+}
+
+.timelineStatLabel {
+    font-size: 0.85rem;
+    color: var(--tl-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.timelineFilters {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.timelineFilter {
+    font-family: inherit;
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    border: 1.5px solid var(--tl-ink);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--tl-ink);
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.timelineFilter:hover {
+    background: rgba(69, 103, 219, 0.1);
+}
+
+.timelineFilter.active {
+    background: var(--tl-blue);
+    border-color: var(--tl-blue);
+    color: #fff;
+}
+
+.timelineList {
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0 0 0 1.75rem;
+    border-left: 2px solid #e3e3ec;
+}
+
+.timelineItem {
+    position: relative;
+    padding-bottom: 2.25rem;
+}
+
+.timelineItem:last-child {
+    padding-bottom: 0;
+}
+
+.timelineMarker {
+    position: absolute;
+    left: -2.4rem;
+    top: 0.35rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--tl-yellow);
+    border: 2.5px solid var(--tl-ink);
+}
+
+.timelineCard {
+    background: #fff;
+    border: 1.5px solid #e3e3ec;
+    border-radius: 12px;
+    padding: 1.25rem 1.4rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.timelineCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(28, 28, 40, 0.1);
+}
+
+.timelineCardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.timelineYear {
+    font-weight: 700;
+    color: var(--tl-blue);
+    font-size: 0.95rem;
+}
+
+.timelineBadge {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background: #ececf3;
+    color: var(--tl-muted);
+}
+
+.timelineBadge.remote {
+    background: rgba(64, 187, 148, 0.16);
+    color: var(--tl-green);
+}
+
+.timelineTitle {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 0.15rem;
+}
+
+.timelineLocation {
+    font-size: 0.85rem;
+    color: var(--tl-muted);
+    margin: 0 0 0.6rem;
+}
+
+.timelineText {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    color: #3a3a48;
+}
+
+.timelineEmpty {
+    color: var(--tl-muted);
+    font-style: italic;
+    padding: 1rem 0;
+}
+
+@media (max-width: 600px) {
+    .timeline {
+        padding: 2.5rem 1rem 4rem;
+    }
+
+    .timelineHeader h1 {
+        font-size: 2rem;
+    }
+
+    .timelineStats {
+        gap: 1.5rem;
+    }
+}

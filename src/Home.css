@@ -335,6 +335,19 @@ h4 {
     background-color: #362e95;
 }
 
+.timelineLink{
+    margin-left: 20px;
+    color: #4C3AFF;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.timelineLink:hover{
+    opacity: 0.65;
+}
+
 #codeh2 {
     color: white;
 }

@@ -85,6 +85,7 @@ const Home = () => {
                         <div className='codeHeaderHolder'>
                                 <h2>Experiences</h2>
                                 <button onClick={toggleWorkExperience}>Show {currentWorkExperience.length === 2 ? 'All Experiences ⬇️' : 'Less'}</button>
+                                <a className='timelineLink' href='/timeline'>View timeline →</a>
                         </div>
                         <hr id='hr1' />
                     </div>

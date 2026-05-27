@@ -50,6 +50,7 @@ ul.headingText li {
 
 ul.headingText li a {
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     position: relative;
     font-size: 8rem;
     text-decoration: none;

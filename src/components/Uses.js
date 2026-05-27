@@ -35,6 +35,15 @@ const sections = [
             { name: 'iA Writer', detail: 'Distraction-free Markdown for drafting blog posts.' },
         ],
     },
+    {
+        heading: 'Audio & focus',
+        items: [
+            { name: 'Sony WH-1000XM5', detail: 'Noise-cancelling headphones for deep work and travel.' },
+            { name: 'Endel', detail: 'Generative focus soundscapes — replaced every "lo-fi beats" playlist for me.' },
+            { name: 'Apple Music classical', detail: 'Default soundtrack while coding. The catalog metadata is the best of any service.' },
+            { name: 'Krisp', detail: 'Background-noise filtering on every call.' },
+        ],
+    },
 ];
 
 const Uses = () => {

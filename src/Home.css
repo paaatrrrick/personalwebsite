@@ -196,7 +196,7 @@ h2 {
 .holderDiv {
     padding: 25px;
     /* outline: 2px solid #212529; */
-    border-radius: 10px;
+    border-radius: 14px;
     display: flex;
     flex-direction: row;
     align-items: center;

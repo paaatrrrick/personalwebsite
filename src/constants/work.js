@@ -5,6 +5,11 @@ const workExperience = [
         timeLine: '2026 - Present. San Francisco, CA',
     },
     {
+        title: 'SWE at Databricks',
+        text: `Worked on the Unity Catalog team. Shipped governance features for cross-workspace asset sharing and helped harden the lineage graph for very large customer accounts.`,
+        timeLine: 'May - August 2037. San Francisco, CA',
+    },
+    {
         title: 'SWE at PostHog',
         text: `Worked on the product analytics surface, with a focus on funnels and session replay performance for high-volume customers.`,
         timeLine: 'May - August 2034. Remote',

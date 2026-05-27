@@ -1,0 +1,117 @@
+.readingList {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #1f2933;
+}
+
+.readingListBack {
+    color: #4567DB;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.readingListBack:hover {
+    text-decoration: underline;
+}
+
+.readingListHeader h1 {
+    font-size: 2.25rem;
+    margin: 16px 0 8px;
+}
+
+.readingListHeader p {
+    color: #52606d;
+    line-height: 1.5;
+}
+
+.readingListFilters {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+.readingListFilter {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(69, 103, 219, 0.35);
+    background: #fff;
+    color: #1f2933;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.readingListFilter.active {
+    background: #4567DB;
+    border-color: #4567DB;
+    color: #fff;
+}
+
+.readingListItems {
+    list-style: none;
+    padding: 0;
+    margin: 32px 0 0;
+}
+
+.readingListItem {
+    padding: 18px 0;
+    border-bottom: 1px dashed #e4e7eb;
+}
+
+.readingListItemTop {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.readingListItem h2 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.readingListAuthor {
+    margin: 4px 0 6px;
+    color: #52606d;
+    font-size: 0.95rem;
+}
+
+.readingListNote {
+    margin: 0;
+    color: #1f2933;
+    line-height: 1.5;
+}
+
+.readingListStatus {
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #e4e7eb;
+    color: #52606d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.readingListStatus.finished {
+    background: #d6f3e2;
+    color: #1c7c54;
+}
+
+.readingListStatus.in-progress {
+    background: #fff4cc;
+    color: #8a6d1f;
+}
+
+.readingListStatus.re-reading {
+    background: #e0e7ff;
+    color: #3553c0;
+}
+
+.readingListEmpty {
+    color: #9aa5b1;
+    padding: 24px 0;
+    text-align: center;
+    list-style: none;
+}

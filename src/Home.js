@@ -9,6 +9,7 @@ import myProjects from './constants/projects';
 import Card from './components/Card';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 import PatrickPhoto from './images/full.jpg';
 import face from './images/face.JPG';
@@ -178,6 +179,7 @@ const Home = () => {
             </div>
             <Testimonials />
             <Contact />
+            <Footer />
         </div >
     );
 }

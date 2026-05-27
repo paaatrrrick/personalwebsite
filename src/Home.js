@@ -37,17 +37,17 @@ const Home = () => {
         }
     }
 
-    const inputEl = useRef(null);
-    const copyTextEl = useRef(null);
+    const emailInputRef = useRef(null);
+    const copyToastRef = useRef(null);
 
 
     const handleCopyClick = () => {
-        inputEl.current.select();
+        emailInputRef.current.select();
         document.execCommand("copy");
-        copyTextEl.current.classList.add("active");
+        copyToastRef.current.classList.add("active");
         window.getSelection().removeAllRanges();
         setTimeout(() => {
-            copyTextEl.current.classList.remove("active");
+            copyToastRef.current.classList.remove("active");
         }, 2500);
     };
 
@@ -163,8 +163,8 @@ const Home = () => {
                         <h5>Lets Get in Touch:</h5>
                     </div>
                     <div className='contact-container'>
-                        <div className="copy-text" ref={copyTextEl}>
-                            <input type="text" className="text" value='patrick.123.foster@gmail.com' ref={inputEl} readonly />
+                        <div className="copy-text" ref={copyToastRef}>
+                            <input type="text" className="text" value='patrick.123.foster@gmail.com' ref={emailInputRef} readonly />
                             <button onClick={handleCopyClick}>
                                 <img src={copy} alt="vlaid" id='copyImage' />
                             </button>

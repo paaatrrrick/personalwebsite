@@ -1,0 +1,72 @@
+.talks {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #1f2933;
+}
+
+.talksBack {
+    color: #4567DB;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.talksBack:hover {
+    text-decoration: underline;
+}
+
+.talksHeader h1 {
+    font-size: 2.25rem;
+    margin: 16px 0 8px;
+}
+
+.talksHeader p {
+    color: #52606d;
+    line-height: 1.5;
+}
+
+.talksList {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0 0;
+}
+
+.talkItem {
+    padding: 24px 0;
+    border-bottom: 1px dashed #e4e7eb;
+}
+
+.talkMeta {
+    display: flex;
+    gap: 12px;
+    font-size: 0.8rem;
+    color: #52606d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.talkVenue {
+    color: #4567DB;
+    font-weight: 600;
+}
+
+.talkTitle {
+    font-size: 1.2rem;
+    margin: 8px 0 6px;
+}
+
+.talkTitle a {
+    color: #1f2933;
+    text-decoration: none;
+}
+
+.talkTitle a:hover {
+    text-decoration: underline;
+}
+
+.talkSummary {
+    margin: 0;
+    color: #1f2933;
+    line-height: 1.55;
+}

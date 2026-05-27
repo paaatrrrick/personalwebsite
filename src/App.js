@@ -7,6 +7,7 @@ import Timeline from "./components/Timeline";
 import Uses from "./components/Uses";
 import Now from "./components/Now";
 import ReadingList from "./components/ReadingList";
+import Talks from "./components/Talks";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
         <Route exact path='/uses' component={Uses} />
         <Route exact path='/now' component={Now} />
         <Route exact path='/reading-list' component={ReadingList} />
+        <Route exact path='/talks' component={Talks} />
         <Route exact path='/magic-the-gathering' component={Haus} />
         <Route exact path='/blog/:id' render={routeProps => <ViewBlog {...routeProps} />} />
         <Route exact path='/*' component={Home} />

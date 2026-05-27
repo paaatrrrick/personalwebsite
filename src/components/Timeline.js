@@ -32,6 +32,7 @@ const decadeOf = (year) => (year ? `${Math.floor(year / 10) * 10}s` : null);
 const Timeline = () => {
     const [filter, setFilter] = useState('All');
     const [decade, setDecade] = useState(ALL_DECADES);
+    const [query, setQuery] = useState('');
 
     const entries = useMemo(() => {
         return workExperience
@@ -53,10 +54,15 @@ const Timeline = () => {
         return [ALL_DECADES, ...Array.from(found).sort()];
     }, [entries]);
 
+    const normalizedQuery = query.trim().toLowerCase();
     const visible = entries.filter((entry) => {
         if (filter === 'Remote' && !entry.remote) return false;
         if (filter === 'On-site' && entry.remote) return false;
         if (decade !== ALL_DECADES && decadeOf(entry.start) !== decade) return false;
+        if (normalizedQuery) {
+            const haystack = `${entry.title} ${entry.text || ''} ${entry.timeLine || ''}`.toLowerCase();
+            if (!haystack.includes(normalizedQuery)) return false;
+        }
         return true;
     });
 
@@ -106,6 +112,13 @@ const Timeline = () => {
                             {option}
                         </button>
                     ))}
+                    <input
+                        type="search"
+                        className="timelineSearch"
+                        placeholder="Search roles…"
+                        value={query}
+                        onChange={(e) => setQuery(e.target.value)}
+                    />
                     <select
                         className="timelineDecadeSelect"
                         value={decade}

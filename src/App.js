@@ -5,6 +5,7 @@ import ViewBlog from './components/ViewBlog';
 import Haus from "./components/Haus";
 import Timeline from "./components/Timeline";
 import Uses from "./components/Uses";
+import Now from "./components/Now";
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
         <Route exact path='/blog' component={Blog} />
         <Route exact path='/timeline' component={Timeline} />
         <Route exact path='/uses' component={Uses} />
+        <Route exact path='/now' component={Now} />
         <Route exact path='/magic-the-gathering' component={Haus} />
         <Route exact path='/blog/:id' render={routeProps => <ViewBlog {...routeProps} />} />
         <Route exact path='/*' component={Home} />

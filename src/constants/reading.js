@@ -29,6 +29,24 @@ const reading = [
         status: 'In progress',
         note: 'Heavy going but the chapter on explanations rewires how you reason.',
     },
+    {
+        title: 'Staff Engineer',
+        author: 'Will Larson',
+        status: 'Finished',
+        note: 'The clearest mapping I have read between staff-level work and what actually moves a company.',
+    },
+    {
+        title: 'Shape Up',
+        author: 'Ryan Singer',
+        status: 'Re-reading',
+        note: 'Re-grounds me on appetite vs. scope every time we start a planning cycle.',
+    },
+    {
+        title: 'Crafting Interpreters',
+        author: 'Robert Nystrom',
+        status: 'In progress',
+        note: 'Working through the tree-walking interpreter in the evenings. Beautifully written.',
+    },
 ];
 
 export default reading;

@@ -8,6 +8,7 @@ import Uses from "./components/Uses";
 import Now from "./components/Now";
 import ReadingList from "./components/ReadingList";
 import Talks from "./components/Talks";
+import NotFound from "./components/NotFound";
 function App() {
   return (
     <div className="App">
@@ -21,8 +22,7 @@ function App() {
         <Route exact path='/talks' component={Talks} />
         <Route exact path='/magic-the-gathering' component={Haus} />
         <Route exact path='/blog/:id' render={routeProps => <ViewBlog {...routeProps} />} />
-        <Route exact path='/*' component={Home} />
-        <Route exact path='*' component={Home} />
+        <Route component={NotFound} />
       </Switch>
     </div>
   );

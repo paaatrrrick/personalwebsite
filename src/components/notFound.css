@@ -1,0 +1,60 @@
+.notFound {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #1f2933;
+}
+
+.notFoundInner {
+    text-align: center;
+    max-width: 480px;
+}
+
+.notFoundInner h1 {
+    font-size: 6rem;
+    margin: 0;
+    color: #4567DB;
+    letter-spacing: 4px;
+}
+
+.notFoundInner p {
+    color: #52606d;
+    margin: 8px 0 32px;
+    line-height: 1.5;
+}
+
+.notFoundActions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.notFoundBtn {
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(69, 103, 219, 0.35);
+    background: #fff;
+    color: #1f2933;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.notFoundBtn.primary {
+    background: #4567DB;
+    border-color: #4567DB;
+    color: #fff;
+}
+
+.notFoundBtn:hover {
+    background: #e0e7ff;
+    color: #1f2933;
+}
+
+.notFoundBtn.primary:hover {
+    background: #3553c0;
+    color: #fff;
+}

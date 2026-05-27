@@ -94,6 +94,21 @@
     color: #fff;
 }
 
+.timelineSearch {
+    margin-left: 0.5rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid rgba(69, 103, 219, 0.35);
+    background: #fff;
+    font-size: 0.9rem;
+    min-width: 180px;
+}
+
+.timelineSearch:focus {
+    outline: 2px solid var(--tl-blue);
+    outline-offset: 1px;
+}
+
 .timelineDecadeSelect {
     margin-left: 0.5rem;
     padding: 0.45rem 0.75rem;

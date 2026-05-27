@@ -1,0 +1,52 @@
+.testimonials {
+    max-width: 960px;
+    margin: 64px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.testimonialsHeader h2 {
+    font-size: 1.75rem;
+    margin: 0 0 8px;
+}
+
+.testimonialsHeader hr {
+    border: none;
+    border-top: 2px solid #1f2933;
+    margin: 0 0 24px;
+}
+
+.testimonialsGrid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.testimonialCard {
+    background: #fffbe8;
+    border: 1px solid #f1e1a6;
+    border-radius: 12px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.testimonialCard blockquote {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #1f2933;
+}
+
+.testimonialCard figcaption {
+    display: flex;
+    flex-direction: column;
+    color: #52606d;
+    font-size: 0.9rem;
+}
+
+.testimonialCard figcaption strong {
+    color: #1f2933;
+}

@@ -1,5 +1,14 @@
 const myProjects = [
     {
+        title: '♟️ Realtime Chess',
+        text: ['Multiplayer chess with no turns — both players move whenever they want, with a per-piece cooldown timer.', '- Built with React and a Node WebSocket server', '- Custom matchmaking + ELO', '- Spectator mode with delayed board state'],
+        image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1702057000/Untitled_design_y9npsz.png",
+        isVideo: false,
+        links: [{
+            text: 'Github', href: 'https://github.com/paaatrrrick/realtime-chess'
+        }]
+    },
+    {
         title: '🐣 Courser',
         text: ['ChatGPT for University classrooms', '- Won HackUIowa 2023', '- First Place in Tech for JPECC Pitch Competition', '- ERA Startup Accelerator Finalist'],
         image: "https://res.cloudinary.com/dlk3ezbal/image/upload/v1702057000/Untitled_design_y9npsz.png",

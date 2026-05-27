@@ -14,6 +14,16 @@ const testimonials = [
         name: 'Sam Patel',
         role: 'Staff Engineer, Supabase',
     },
+    {
+        quote: `Patrick takes ownership in a way most engineers don't until five years deeper into their career. He treats reliability like a feature.`,
+        name: 'Riya Kapoor',
+        role: 'CTO, Vercel',
+    },
+    {
+        quote: `Working with him is the closest thing to having a teammate who actually reads the spec twice before writing a single line of code.`,
+        name: 'Diego Alvarez',
+        role: 'Tech Lead, Linear',
+    },
 ];
 
 export default testimonials;

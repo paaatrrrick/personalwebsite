@@ -25,9 +25,13 @@ const locationOf = (timeLine = '') => {
 const isRemote = (timeLine = '') => /remote/i.test(timeLine);
 
 const FILTERS = ['All', 'Remote', 'On-site'];
+const ALL_DECADES = 'All decades';
+
+const decadeOf = (year) => (year ? `${Math.floor(year / 10) * 10}s` : null);
 
 const Timeline = () => {
     const [filter, setFilter] = useState('All');
+    const [decade, setDecade] = useState(ALL_DECADES);
 
     const entries = useMemo(() => {
         return workExperience
@@ -40,9 +44,19 @@ const Timeline = () => {
             .sort((a, b) => b.start - a.start || b.end - a.end);
     }, []);
 
+    const decades = useMemo(() => {
+        const found = new Set();
+        entries.forEach((e) => {
+            const d = decadeOf(e.start);
+            if (d) found.add(d);
+        });
+        return [ALL_DECADES, ...Array.from(found).sort()];
+    }, [entries]);
+
     const visible = entries.filter((entry) => {
-        if (filter === 'Remote') return entry.remote;
-        if (filter === 'On-site') return !entry.remote;
+        if (filter === 'Remote' && !entry.remote) return false;
+        if (filter === 'On-site' && entry.remote) return false;
+        if (decade !== ALL_DECADES && decadeOf(entry.start) !== decade) return false;
         return true;
     });
 
@@ -92,6 +106,17 @@ const Timeline = () => {
                             {option}
                         </button>
                     ))}
+                    <select
+                        className="timelineDecadeSelect"
+                        value={decade}
+                        onChange={(e) => setDecade(e.target.value)}
+                    >
+                        {decades.map((option) => (
+                            <option key={option} value={option}>
+                                {option}
+                            </option>
+                        ))}
+                    </select>
                 </div>
             </header>
 

@@ -94,6 +94,22 @@
     color: #fff;
 }
 
+.timelineDecadeSelect {
+    margin-left: 0.5rem;
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid rgba(69, 103, 219, 0.35);
+    background: #fff;
+    color: var(--tl-ink, #1f2933);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.timelineDecadeSelect:focus {
+    outline: 2px solid var(--tl-blue);
+    outline-offset: 1px;
+}
+
 .timelineList {
     list-style: none;
     margin: 2rem 0 0;

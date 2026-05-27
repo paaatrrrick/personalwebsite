@@ -26,6 +26,15 @@ const sections = [
             { name: 'Arc', detail: 'Primary browser. Spaces keep work and personal contexts separate.' },
         ],
     },
+    {
+        heading: 'Productivity & writing',
+        items: [
+            { name: 'Notion', detail: 'Long-form notes, project planning, and meeting docs.' },
+            { name: 'Obsidian', detail: 'Local-first daily journal and a tangled web of zettelkasten notes.' },
+            { name: 'Things 3', detail: 'Task manager I keep coming back to after trying every alternative.' },
+            { name: 'iA Writer', detail: 'Distraction-free Markdown for drafting blog posts.' },
+        ],
+    },
 ];
 
 const Uses = () => {

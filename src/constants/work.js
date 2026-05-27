@@ -5,6 +5,11 @@ const workExperience = [
         timeLine: '2026 - Present. San Francisco, CA',
     },
     {
+        title: 'SWE at Cloudflare',
+        text: `Worked on Workers KV. Drove a latency-reduction effort for cross-region reads and helped land a new write-coalescing path that cut tail latency on hot keys.`,
+        timeLine: 'May - August 2038. Austin, TX',
+    },
+    {
         title: 'SWE at Databricks',
         text: `Worked on the Unity Catalog team. Shipped governance features for cross-workspace asset sharing and helped harden the lineage graph for very large customer accounts.`,
         timeLine: 'May - August 2037. San Francisco, CA',

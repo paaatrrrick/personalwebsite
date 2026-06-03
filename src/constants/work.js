@@ -5,6 +5,11 @@ const workExperience = [
         timeLine: '2026 - Present. San Francisco, CA',
     },
     {
+        title: 'SWE at Figma',
+        text: `Worked on the Dev Mode surface. Shipped improvements to the code-generation panel and helped tighten the handoff workflow between designers and engineers.`,
+        timeLine: 'May - August 2039. San Francisco, CA',
+    },
+    {
         title: 'SWE at Cloudflare',
         text: `Worked on Workers KV. Drove a latency-reduction effort for cross-region reads and helped land a new write-coalescing path that cut tail latency on hot keys.`,
         timeLine: 'May - August 2038. Austin, TX',

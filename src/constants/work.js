@@ -6,7 +6,7 @@ const workExperience = [
     },
     {
         title: 'SWE at Figma',
-        text: `Worked on the multiplayer canvas team. Shipped improvements to real-time cursor presence and helped optimize the rendering pipeline for very large design files.`,
+        text: `Worked on the Dev Mode surface. Shipped improvements to the code-generation panel and helped tighten the handoff workflow between designers and engineers.`,
         timeLine: 'May - August 2039. San Francisco, CA',
     },
     {

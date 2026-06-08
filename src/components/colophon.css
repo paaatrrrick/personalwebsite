@@ -1,0 +1,53 @@
+.colophon {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #1f2933;
+}
+
+.colophonBack {
+    color: #4567DB;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.colophonBack:hover {
+    text-decoration: underline;
+}
+
+.colophonHeader h1 {
+    font-size: 2.25rem;
+    margin: 16px 0 4px;
+}
+
+.colophonMeta {
+    color: #9aa5b1;
+    font-size: 0.85rem;
+    margin: 0 0 12px;
+}
+
+.colophonIntro {
+    color: #52606d;
+    line-height: 1.55;
+}
+
+.colophonSection {
+    margin-top: 32px;
+}
+
+.colophonSection h2 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #e4e7eb;
+    padding-bottom: 6px;
+}
+
+.colophonSection ul {
+    padding-left: 20px;
+}
+
+.colophonSection li {
+    margin: 8px 0;
+    line-height: 1.5;
+    color: #1f2933;
+}

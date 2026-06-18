@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const EMOJI = ["👍", "❤️", "🎉", "🤔"];
+const EMOJI = ["👍", "❤️", "🎉", "🤔", "😂", "🚀"];
 
 export default function Reactions({ targetId, initialCounts = {}, onReact }) {
   const [counts, setCounts] = useState(initialCounts);

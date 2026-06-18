@@ -9,6 +9,7 @@ import Now from "./components/Now";
 import ReadingList from "./components/ReadingList";
 import Talks from "./components/Talks";
 import Colophon from "./components/Colophon";
+import Bookmarks from "./components/Bookmarks";
 import NotFound from "./components/NotFound";
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path='/reading-list' component={ReadingList} />
         <Route exact path='/talks' component={Talks} />
         <Route exact path='/colophon' component={Colophon} />
+        <Route exact path='/bookmarks' component={Bookmarks} />
         <Route exact path='/magic-the-gathering' component={Haus} />
         <Route exact path='/blog/:id' render={routeProps => <ViewBlog {...routeProps} />} />
         <Route component={NotFound} />

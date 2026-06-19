@@ -1,14 +1,18 @@
 import React, { useRef } from "react";
-import { commandsByGroup } from "../constants/commands";
+import { commands as allCommands, commandsByGroup } from "../constants/commands";
 import { useCommandPalette } from "./useCommandPalette";
+import { useRecentCommands } from "./useRecentCommands";
 import "./commandPalette.css";
 
 export default function CommandPalette() {
   const { open, query, setQuery, results, activeIndex, setActiveIndex, move, closePalette } =
     useCommandPalette();
   const inputRef = useRef(null);
+  const { record, resolveRecents } = useRecentCommands();
+  const recents = query.trim() ? [] : resolveRecents(allCommands);
 
   const runCommand = (cmd) => {
+    record(cmd.id);
     closePalette();
     if (cmd.run) {
       void cmd.run();
@@ -53,6 +57,21 @@ export default function CommandPalette() {
         />
         <div className="cmdk-results">
           {results.length === 0 && <p className="cmdk-empty">No matching commands.</p>}
+          {recents.length > 0 && (
+            <div className="cmdk-group">
+              <p className="cmdk-group-label">Recent</p>
+              {recents.map((cmd) => (
+                <button
+                  key={`recent-${cmd.id}`}
+                  type="button"
+                  className="cmdk-item"
+                  onClick={() => runCommand(cmd)}
+                >
+                  <span>{cmd.label}</span>
+                </button>
+              ))}
+            </div>
+          )}
           {grouped.map((section) => (
             <div key={section.group} className="cmdk-group">
               <p className="cmdk-group-label">{section.group}</p>

@@ -1,0 +1,38 @@
+.shortcuts-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.shortcuts-panel {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 28px;
+  width: min(440px, 92vw);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+.shortcuts-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+.shortcuts-panel li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 0;
+  font-size: 14px;
+}
+.shortcuts-keys {
+  display: flex;
+  gap: 4px;
+}
+.shortcuts-keys kbd {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 12px;
+}

@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { projects } from "../constants/projects";
 
 export function allTags(list = projects) {
@@ -7,8 +7,30 @@ export function allTags(list = projects) {
   return [...set].sort();
 }
 
+function tagFromUrl() {
+  if (typeof window === "undefined") return null;
+  return new URLSearchParams(window.location.search).get("tag");
+}
+
 export function useProjectFilter(list = projects) {
-  const [activeTag, setActiveTag] = useState(null);
+  const [activeTag, setActiveTagState] = useState(tagFromUrl);
+
+  const setActiveTag = (tag) => {
+    setActiveTagState(tag);
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      if (tag) params.set("tag", tag);
+      else params.delete("tag");
+      const query = params.toString();
+      window.history.replaceState(null, "", query ? `?${query}` : window.location.pathname);
+    }
+  };
+
+  useEffect(() => {
+    const onPopState = () => setActiveTagState(tagFromUrl());
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
 
   const filtered = useMemo(() => {
     if (!activeTag) return list;

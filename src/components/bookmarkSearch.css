@@ -1,0 +1,21 @@
+.bookmark-search input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+.bookmark-search ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+.bookmark-search li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+.bookmark-search-tag {
+  font-size: 12px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}

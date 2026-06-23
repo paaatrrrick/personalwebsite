@@ -1,0 +1,19 @@
+.project-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+.project-filter button {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+  padding: 4px 12px;
+  background: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+.project-filter button.is-active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}

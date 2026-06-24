@@ -10,6 +10,7 @@ import ReadingList from "./components/ReadingList";
 import Talks from "./components/Talks";
 import Colophon from "./components/Colophon";
 import NotFound from "./components/NotFound";
+import Faq from "./components/Faq";
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
         <Route exact path='/colophon' component={Colophon} />
         <Route exact path='/magic-the-gathering' component={Haus} />
         <Route exact path='/blog/:id' render={routeProps => <ViewBlog {...routeProps} />} />
+        <Route exact path='/faq' component={Faq} />
         <Route component={NotFound} />
       </Switch>
     </div>

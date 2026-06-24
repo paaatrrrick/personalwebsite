@@ -1,0 +1,30 @@
+.faq {
+    max-width: 40rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.faqList {
+    list-style: none;
+    padding: 0;
+}
+
+.faqItem {
+    border-bottom: 1px solid #eee;
+}
+
+.faqQuestion {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faqAnswer {
+    padding-bottom: 1rem;
+    color: #444;
+}

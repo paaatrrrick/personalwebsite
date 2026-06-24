@@ -91,3 +91,8 @@
     color: #777;
     grid-column: 1 / -1;
 }
+
+.projectUpdated {
+    font-size: 0.75rem;
+    color: #999;
+}

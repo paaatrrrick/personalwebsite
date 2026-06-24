@@ -64,6 +64,7 @@ const Projects = () => {
                         </div>
                         <p className="projectTagline">{project.tagline}</p>
                         <p className="projectDescription">{project.description}</p>
+                        {project.updated && <p className="projectUpdated">Updated {project.updated}</p>}
                         <ul className="projectTech">
                             {project.tech.map((tech) => (
                                 <li key={tech} className="projectTechItem">{tech}</li>

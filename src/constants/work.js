@@ -1,5 +1,10 @@
 const workExperience = [
     {
+        title: 'Technical Advisor at Vercel',
+        text: `Advising the developer experience team on documentation architecture and authoring workflows for framework partners.`,
+        timeLine: '2030 - Present. Remote',
+    },
+    {
         title: 'SWE at Mintlify',
         text: `Building documentation tooling that developers actually like using. Shipped features across the editor and AI-assisted writing surfaces, and partnered with the platform team on integrations with the broader docs ecosystem.`,
         timeLine: '2026 - Present. San Francisco, CA',

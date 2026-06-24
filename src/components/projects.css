@@ -31,3 +31,24 @@
     border-radius: 0.25rem;
     padding: 0.15rem 0.5rem;
 }
+
+.projectsFilter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.projectsFilterButton {
+    font-size: 0.8rem;
+    background: #f3f3f3;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.6rem;
+    cursor: pointer;
+}
+
+.projectsFilterButton.active {
+    border-color: #333;
+    font-weight: 600;
+}

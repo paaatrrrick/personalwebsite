@@ -1,6 +1,7 @@
 const projects = [
     {
         name: 'Inkwell',
+        featured: true,
         tagline: 'A markdown-first note-taking app',
         description: 'A local-first notes app with bidirectional links, a command palette, and end-to-end encrypted sync.',
         status: 'Active',

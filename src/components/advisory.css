@@ -20,3 +20,24 @@
     font-size: 0.85rem;
     color: #666;
 }
+
+.advisoryServices {
+    margin-top: 2.5rem;
+}
+
+.advisoryServicesList {
+    list-style: none;
+    padding: 0;
+}
+
+.advisoryServiceItem {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.advisoryServiceMeta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #666;
+}

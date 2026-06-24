@@ -31,3 +31,49 @@
     border-radius: 0.25rem;
     padding: 0.15rem 0.5rem;
 }
+
+.projectsFilter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.projectsFilterButton {
+    font-size: 0.8rem;
+    background: #f3f3f3;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.6rem;
+    cursor: pointer;
+}
+
+.projectsFilterButton.active {
+    border-color: #333;
+    font-weight: 600;
+}
+
+.projectHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.projectStatus {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-radius: 0.25rem;
+    padding: 0.1rem 0.4rem;
+}
+
+.projectStatus.active {
+    background: #e6f4ea;
+    color: #1e8e3e;
+}
+
+.projectStatus.archived {
+    background: #f1f1f1;
+    color: #777;
+}

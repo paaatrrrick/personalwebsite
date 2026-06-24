@@ -1,5 +1,10 @@
 const workExperience = [
     {
+        title: 'Volunteer Mentor at Recurse Center',
+        text: `Mentoring engineers on systems programming projects and coaching open-source contributors on documentation.`,
+        timeLine: '2032 - Present. Remote',
+    },
+    {
         title: 'SWE at Mintlify',
         text: `Building documentation tooling that developers actually like using. Shipped features across the editor and AI-assisted writing surfaces, and partnered with the platform team on integrations with the broader docs ecosystem.`,
         timeLine: '2026 - Present. San Francisco, CA',

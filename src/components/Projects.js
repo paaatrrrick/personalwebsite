@@ -61,6 +61,7 @@ const Projects = () => {
                                 <a href={project.link} target="_blank" rel="noreferrer">{project.name}</a>
                             </h2>
                             <span className={`projectStatus ${project.status.toLowerCase()}`}>{project.status}</span>
+                            {project.featured && <span className="projectFeatured">★ Featured</span>}
                         </div>
                         <p className="projectTagline">{project.tagline}</p>
                         <p className="projectDescription">{project.description}</p>

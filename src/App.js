@@ -10,6 +10,7 @@ import ReadingList from "./components/ReadingList";
 import Talks from "./components/Talks";
 import Colophon from "./components/Colophon";
 import NotFound from "./components/NotFound";
+import Projects from "./components/Projects";
 import Advisory from "./components/Advisory";
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route exact path='/colophon' component={Colophon} />
         <Route exact path='/magic-the-gathering' component={Haus} />
         <Route exact path='/blog/:id' render={routeProps => <ViewBlog {...routeProps} />} />
+        <Route exact path='/projects' component={Projects} />
         <Route exact path='/advisory' component={Advisory} />
         <Route component={NotFound} />
       </Switch>

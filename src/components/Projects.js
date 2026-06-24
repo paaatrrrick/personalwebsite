@@ -40,9 +40,12 @@ const Projects = () => {
             <div className="projectsGrid">
                 {visible.map((project) => (
                     <article key={project.name} className="projectCard">
-                        <h2 className="projectName">
-                            <a href={project.link} target="_blank" rel="noreferrer">{project.name}</a>
-                        </h2>
+                        <div className="projectHeading">
+                            <h2 className="projectName">
+                                <a href={project.link} target="_blank" rel="noreferrer">{project.name}</a>
+                            </h2>
+                            <span className={`projectStatus ${project.status.toLowerCase()}`}>{project.status}</span>
+                        </div>
                         <p className="projectTagline">{project.tagline}</p>
                         <p className="projectDescription">{project.description}</p>
                         <ul className="projectTech">

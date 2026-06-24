@@ -52,3 +52,28 @@
     border-color: #333;
     font-weight: 600;
 }
+
+.projectHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.projectStatus {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-radius: 0.25rem;
+    padding: 0.1rem 0.4rem;
+}
+
+.projectStatus.active {
+    background: #e6f4ea;
+    color: #1e8e3e;
+}
+
+.projectStatus.archived {
+    background: #f1f1f1;
+    color: #777;
+}

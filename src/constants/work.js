@@ -1,5 +1,10 @@
 const workExperience = [
     {
+        title: 'Research Engineer at Cloudflare',
+        text: `Drove the write-coalescing effort on Workers KV that became a granted patent for reducing tail latency on hot keys.`,
+        timeLine: '2038. Austin, TX',
+    },
+    {
         title: 'SWE at Mintlify',
         text: `Building documentation tooling that developers actually like using. Shipped features across the editor and AI-assisted writing surfaces, and partnered with the platform team on integrations with the broader docs ecosystem.`,
         timeLine: '2026 - Present. San Francisco, CA',

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import advisoryRoles from '../constants/advisory';
+import advisoryServices from '../constants/advisoryServices';
 import './advisory.css';
 
 const Advisory = () => {
@@ -22,6 +23,20 @@ const Advisory = () => {
                     </li>
                 ))}
             </ul>
+            <section className="advisoryServices">
+                <h2>How I work with teams</h2>
+                <ul className="advisoryServicesList">
+                    {advisoryServices.map((service) => (
+                        <li key={service.name} className="advisoryServiceItem">
+                            <div className="advisoryServiceMeta">
+                                <span className="advisoryServiceName">{service.name}</span>
+                                <span className="advisoryServiceCadence">{service.cadence}</span>
+                            </div>
+                            <p className="advisoryServiceSummary">{service.summary}</p>
+                        </li>
+                    ))}
+                </ul>
+            </section>
         </main>
     );
 };

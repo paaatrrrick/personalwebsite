@@ -73,6 +73,9 @@ const Projects = () => {
                 ))}
                 {visible.length === 0 && <p className="projectsEmpty">No projects match your search.</p>}
             </div>
+            <footer className="projectsFooter">
+                <a href="https://github.com/example" target="_blank" rel="noreferrer">See all repositories on GitHub →</a>
+            </footer>
         </main>
     );
 };

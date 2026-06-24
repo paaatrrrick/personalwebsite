@@ -33,6 +33,7 @@ const Projects = () => {
                 <h1>Projects</h1>
                 <p>Side projects I've built and maintain. Most are open source.</p>
             </header>
+            <section className="projectsBanner">I'm currently open to new collaborations — <a href="mailto:patrick@example.com">get in touch</a>.</section>
             <input
                 className="projectsSearch"
                 type="search"

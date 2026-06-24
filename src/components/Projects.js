@@ -7,6 +7,7 @@ const ALL = 'All';
 
 const Projects = () => {
     const [activeTech, setActiveTech] = useState(ALL);
+    const [query, setQuery] = useState('');
 
     const techs = useMemo(() => {
         const found = new Set();
@@ -14,9 +15,16 @@ const Projects = () => {
         return [ALL, ...Array.from(found).sort()];
     }, []);
 
-    const visible = projects.filter(
-        (project) => activeTech === ALL || project.tech.includes(activeTech)
-    );
+    const normalizedQuery = query.trim().toLowerCase();
+    const visible = projects.filter((project) => {
+        if (activeTech !== ALL && !project.tech.includes(activeTech)) return false;
+        if (!normalizedQuery) return true;
+        return (
+            project.name.toLowerCase().includes(normalizedQuery) ||
+            project.tagline.toLowerCase().includes(normalizedQuery) ||
+            project.description.toLowerCase().includes(normalizedQuery)
+        );
+    });
 
     return (
         <main className="projects">
@@ -25,6 +33,14 @@ const Projects = () => {
                 <h1>Projects</h1>
                 <p>Side projects I've built and maintain. Most are open source.</p>
             </header>
+            <input
+                className="projectsSearch"
+                type="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search projects…"
+                aria-label="Search projects"
+            />
             <div className="projectsFilter">
                 {techs.map((tech) => (
                     <button
@@ -55,6 +71,7 @@ const Projects = () => {
                         </ul>
                     </article>
                 ))}
+                {visible.length === 0 && <p className="projectsEmpty">No projects match your search.</p>}
             </div>
         </main>
     );

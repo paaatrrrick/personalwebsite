@@ -64,7 +64,10 @@ const Projects = () => {
                             {project.featured && <span className="projectFeatured">Featured</span>}
                             <span className={`projectStatus ${project.status.toLowerCase()}`}>{project.status}</span>
                         </div>
-                        <p className="projectTagline">{project.tagline}</p>
+                        <p className="projectTagline">
+                            {project.tagline}
+                            {project.year && <span className="projectYear"> · {project.year}</span>}
+                        </p>
                         <p className="projectDescription">{project.description}</p>
                         <ul className="projectTech">
                             {project.tech.map((tech) => (

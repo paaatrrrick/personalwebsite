@@ -16,7 +16,8 @@ const Projects = () => {
     }, []);
 
     const normalizedQuery = query.trim().toLowerCase();
-    const visible = projects.filter((project) => {
+    const ordered = [...projects].sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)));
+    const visible = ordered.filter((project) => {
         if (activeTech !== ALL && !project.tech.includes(activeTech)) return false;
         if (!normalizedQuery) return true;
         return (
@@ -55,11 +56,12 @@ const Projects = () => {
             </div>
             <div className="projectsGrid">
                 {visible.map((project) => (
-                    <article key={project.name} className="projectCard">
+                    <article key={project.name} className={`projectCard${project.featured ? ' featured' : ''}`}>
                         <div className="projectHeading">
                             <h2 className="projectName">
                                 <a href={project.link} target="_blank" rel="noreferrer">{project.name}</a>
                             </h2>
+                            {project.featured && <span className="projectFeatured">Featured</span>}
                             <span className={`projectStatus ${project.status.toLowerCase()}`}>{project.status}</span>
                         </div>
                         <p className="projectTagline">{project.tagline}</p>

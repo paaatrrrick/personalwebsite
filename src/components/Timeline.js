@@ -153,7 +153,13 @@ const Timeline = () => {
                                     {entry.remote ? 'Remote' : 'On-site'}
                                 </span>
                             </div>
-                            <h2 className="timelineTitle">{entry.title}</h2>
+                            <h2 className="timelineTitle">
+                                {entry.link ? (
+                                    <a href={entry.link} target="_blank" rel="noreferrer">{entry.title}</a>
+                                ) : (
+                                    entry.title
+                                )}
+                            </h2>
                             <p className="timelineLocation">
                                 {locationOf(entry.timeLine)}
                             </p>

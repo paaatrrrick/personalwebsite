@@ -160,6 +160,13 @@ const Timeline = () => {
                                     entry.title
                                 )}
                             </h2>
+                            {entry.skills?.length > 0 && (
+                                <ul className="timelineSkills">
+                                    {entry.skills.map((skill) => (
+                                        <li key={skill}>{skill}</li>
+                                    ))}
+                                </ul>
+                            )}
                             <p className="timelineLocation">
                                 {locationOf(entry.timeLine)}
                             </p>

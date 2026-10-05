@@ -9,6 +9,7 @@ export default function PostMeta({
   showDate = true,
   showReadingTime = true,
   separator = "·",
+  className = "",
 }) {
   const segments = [
     showDate && post.date && <span className="post-meta-date">{post.date}</span>,
@@ -16,7 +17,7 @@ export default function PostMeta({
     showViews && <ViewCounter postId={post.id} />,
   ].filter(Boolean);
   return (
-    <div className="post-meta">
+    <div className={["post-meta", className].filter(Boolean).join(" ")}>
       {segments.map((segment, index) => (
         <React.Fragment key={index}>
           {index > 0 && <span className="post-meta-separator">{separator}</span>}

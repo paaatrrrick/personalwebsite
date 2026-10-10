@@ -69,6 +69,11 @@ const Projects = () => {
                             {project.year && <span className="projectYear"> · {project.year}</span>}
                         </p>
                         <p className="projectDescription">{project.description}</p>
+                        {project.repo && (
+                            <a className="projectRepo" href={project.repo} target="_blank" rel="noreferrer">
+                                Source code
+                            </a>
+                        )}
                         <ul className="projectTech">
                             {project.tech.map((tech) => (
                                 <li key={tech} className="projectTechItem">{tech}</li>

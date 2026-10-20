@@ -42,6 +42,7 @@ const Projects = () => {
                 placeholder="Search projects…"
                 aria-label="Search projects"
             />
+            <p className="projectsCount">Showing {visible.length} of {projects.length} projects</p>
             <div className="projectsFilter">
                 {techs.map((tech) => (
                     <button

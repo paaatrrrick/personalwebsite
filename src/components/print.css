@@ -1,0 +1,27 @@
+.print-button {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 6px 12px;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+@media print {
+  .print-button,
+  nav,
+  footer,
+  .share-buttons,
+  .related-posts {
+    display: none !important;
+  }
+  body {
+    font-size: 12pt;
+    color: #000;
+  }
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #555;
+  }
+}

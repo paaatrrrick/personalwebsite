@@ -1,0 +1,15 @@
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 1000;
+  background: transparent;
+}
+.reading-progress-bar {
+  height: 100%;
+  background: #111;
+  transform-origin: left;
+  transition: transform 0.1s linear;
+}

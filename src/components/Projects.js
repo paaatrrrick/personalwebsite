@@ -63,6 +63,7 @@ const Projects = () => {
                             </h2>
                             {project.featured && <span className="projectFeatured">Featured</span>}
                             <span className={`projectStatus ${project.status.toLowerCase()}`}>{project.status}</span>
+                            {project.featured && <span className="projectFeatured">★ Featured</span>}
                         </div>
                         <p className="projectTagline">
                             {project.tagline}

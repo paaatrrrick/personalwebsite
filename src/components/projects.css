@@ -91,3 +91,9 @@
     color: #777;
     grid-column: 1 / -1;
 }
+
+.projectFeatured {
+    font-size: 0.7rem;
+    color: #b8860b;
+    margin-left: 0.4rem;
+}

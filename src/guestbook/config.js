@@ -15,3 +15,5 @@ export const GUESTBOOK_BLOCKED_WORDS = (process.env.REACT_APP_GUESTBOOK_BLOCKED_
     .filter(Boolean);
 
 export const GUESTBOOK_REQUIRE_APPROVAL = process.env.REACT_APP_GUESTBOOK_REQUIRE_APPROVAL === 'true';
+
+export const GUESTBOOK_REACTIONS = ['👋', '❤️', '🔥', '😂'];

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
-import { GUESTBOOK_ENABLED, GUESTBOOK_LIMITS } from '../guestbook/config';
+import { GUESTBOOK_ENABLED, GUESTBOOK_LIMITS, GUESTBOOK_REACTIONS } from '../guestbook/config';
+import { reactToEntry } from '../guestbook/store';
 import { useGuestbook } from '../hooks/useGuestbook';
 import NotFound from './NotFound';
 import './guestbook.css';
@@ -20,7 +21,7 @@ const Guestbook = () => {
     return (
         <main className="guestbook">
             <h1>Guestbook</h1>
-            <p className="guestbook-intro">Say hi. Entries show up right away, newest first.</p>
+            <p className="guestbook-intro">Say hi. Entries show up right away, newest first. <a href="/guestbook/feed.xml">RSS</a></p>
             <form className="guestbook-form" onSubmit={onSubmit}>
                 <label>
                     Name
@@ -41,6 +42,13 @@ const Guestbook = () => {
                         <strong>{entry.name}</strong>
                         <time dateTime={entry.createdAt}>{new Date(entry.createdAt).toLocaleDateString()}</time>
                         <p>{entry.message}</p>
+                        <div className="guestbook-reactions">
+                            {GUESTBOOK_REACTIONS.map((emoji) => (
+                                <button key={emoji} onClick={() => { reactToEntry(entry.id, emoji); goToPage(page); }}>
+                                    {emoji} {(entry.reactions || {})[emoji] || ''}
+                                </button>
+                            ))}
+                        </div>
                     </li>
                 ))}
             </ol>

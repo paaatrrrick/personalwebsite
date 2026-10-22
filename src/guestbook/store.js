@@ -83,3 +83,13 @@ export const moderateEntry = (id, decision) => {
     }
     write(read().map((entry) => (entry.id === id ? { ...entry, status: decision } : entry)));
 };
+
+export const reactToEntry = (id, emoji) => {
+    write(
+        read().map((entry) =>
+            entry.id === id
+                ? { ...entry, reactions: { ...(entry.reactions || {}), [emoji]: ((entry.reactions || {})[emoji] || 0) + 1 } }
+                : entry
+        )
+    );
+};

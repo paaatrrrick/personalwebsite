@@ -1,0 +1,8 @@
+.guestbook { max-width: 640px; margin: 0 auto; padding: 2rem 1rem; }
+.guestbook-form { display: grid; gap: 0.75rem; margin-bottom: 2rem; }
+.guestbook-form textarea { min-height: 6rem; }
+.guestbook-count { font-size: 0.8rem; opacity: 0.6; }
+.guestbook-error { color: #b91c1c; }
+.guestbook-entries { list-style: none; padding: 0; display: grid; gap: 1rem; }
+.guestbook-entries time { margin-left: 0.5rem; opacity: 0.6; font-size: 0.85rem; }
+.guestbook-pages { display: flex; gap: 1rem; align-items: center; justify-content: center; }

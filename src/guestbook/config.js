@@ -8,3 +8,10 @@ export const GUESTBOOK_LIMITS = {
 };
 
 export const GUESTBOOK_STORAGE_KEY = 'guestbook:entries:v1';
+
+export const GUESTBOOK_BLOCKED_WORDS = (process.env.REACT_APP_GUESTBOOK_BLOCKED_WORDS || '')
+    .split(',')
+    .map((word) => word.trim().toLowerCase())
+    .filter(Boolean);
+
+export const GUESTBOOK_REQUIRE_APPROVAL = process.env.REACT_APP_GUESTBOOK_REQUIRE_APPROVAL === 'true';

@@ -13,6 +13,8 @@ import NotFound from "./components/NotFound";
 import Faq from "./components/Faq";
 import Projects from "./components/Projects";
 import Advisory from "./components/Advisory";
+import Guestbook from "./components/Guestbook";
+import GuestbookModeration from "./components/GuestbookModeration";
 function App() {
   return (
     <div className="App">
@@ -30,6 +32,8 @@ function App() {
         <Route exact path='/faq' component={Faq} />
         <Route exact path='/projects' component={Projects} />
         <Route exact path='/advisory' component={Advisory} />
+        <Route exact path='/guestbook' component={Guestbook} />
+        <Route exact path='/guestbook/moderation' component={GuestbookModeration} />
         <Route component={NotFound} />
       </Switch>
     </div>

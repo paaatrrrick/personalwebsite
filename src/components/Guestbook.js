@@ -6,10 +6,18 @@ import { useGuestbook } from '../hooks/useGuestbook';
 import NotFound from './NotFound';
 import './guestbook.css';
 
+const SORT_OPTIONS = [
+    { id: 'newest', label: 'Newest' },
+    { id: 'reactions', label: 'Most reactions' },
+];
+
+const reactionCount = (entry) => Object.values(entry.reactions || {}).reduce((sum, count) => sum + count, 0);
+
 const Guestbook = () => {
     const { entries, total, page, pages, goToPage, sign, error } = useGuestbook();
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
+    const [sort, setSort] = useState('newest');
 
     if (!GUESTBOOK_ENABLED) return <NotFound />;
 
@@ -17,6 +25,10 @@ const Guestbook = () => {
         event.preventDefault();
         if (sign({ name, message })) setMessage('');
     };
+
+    const sortedEntries = sort === 'reactions'
+        ? [...entries].sort((a, b) => reactionCount(b) - reactionCount(a))
+        : entries;
 
     return (
         <main className="guestbook">
@@ -35,9 +47,18 @@ const Guestbook = () => {
                 {error && <p className="guestbook-error" role="alert">{error}</p>}
                 <button type="submit">Sign the guestbook</button>
             </form>
-            <p className="guestbook-total">{total} {total === 1 ? 'entry' : 'entries'}</p>
+            <div className="guestbook-toolbar">
+                <p className="guestbook-total">{total} {total === 1 ? 'entry' : 'entries'}</p>
+                <div className="guestbook-sort" role="group" aria-label="Sort entries">
+                    {SORT_OPTIONS.map((option) => (
+                        <button key={option.id} aria-pressed={sort === option.id} onClick={() => setSort(option.id)}>
+                            {option.label}
+                        </button>
+                    ))}
+                </div>
+            </div>
             <ol className="guestbook-entries">
-                {entries.map((entry) => (
+                {sortedEntries.map((entry) => (
                     <li key={entry.id}>
                         <strong>{entry.name}</strong>
                         <time dateTime={entry.createdAt}>{new Date(entry.createdAt).toLocaleDateString()}</time>

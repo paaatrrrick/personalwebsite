@@ -18,6 +18,7 @@ const Guestbook = () => {
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
     const [sort, setSort] = useState('newest');
+    const [query, setQuery] = useState('');
 
     if (!GUESTBOOK_ENABLED) return <NotFound />;
 
@@ -26,9 +27,13 @@ const Guestbook = () => {
         if (sign({ name, message })) setMessage('');
     };
 
-    const sortedEntries = sort === 'reactions'
-        ? [...entries].sort((a, b) => reactionCount(b) - reactionCount(a))
+    const needle = query.trim().toLowerCase();
+    const matchingEntries = needle
+        ? entries.filter((entry) => `${entry.name} ${entry.message}`.toLowerCase().includes(needle))
         : entries;
+    const sortedEntries = sort === 'reactions'
+        ? [...matchingEntries].sort((a, b) => reactionCount(b) - reactionCount(a))
+        : matchingEntries;
 
     return (
         <main className="guestbook">
@@ -48,7 +53,15 @@ const Guestbook = () => {
                 <button type="submit">Sign the guestbook</button>
             </form>
             <div className="guestbook-toolbar">
-                <p className="guestbook-total">{total} {total === 1 ? 'entry' : 'entries'}</p>
+                <p className="guestbook-total">{needle ? `${matchingEntries.length} of ` : ''}{total} {total === 1 ? 'entry' : 'entries'}</p>
+                <input
+                    className="guestbook-search"
+                    type="search"
+                    aria-label="Search entries"
+                    placeholder="Search entries"
+                    value={query}
+                    onChange={(event) => setQuery(event.target.value)}
+                />
                 <div className="guestbook-sort" role="group" aria-label="Sort entries">
                     {SORT_OPTIONS.map((option) => (
                         <button key={option.id} aria-pressed={sort === option.id} onClick={() => setSort(option.id)}>

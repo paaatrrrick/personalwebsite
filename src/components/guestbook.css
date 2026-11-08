@@ -11,3 +11,4 @@
 .guestbook-sort { display: flex; gap: 2px; padding: 3px; border-radius: 8px; background: #f4f4f7; }
 .guestbook-sort button { padding: 6px 12px; border: 1px solid transparent; border-radius: 6px; background: none; color: #6b7079; font-size: 13px; cursor: pointer; }
 .guestbook-sort button[aria-pressed='true'] { border-color: #e0e3e8; background: #fff; color: #17171c; font-weight: 700; }
+.guestbook-search { width: 260px; padding: 8px 12px; border: 1px solid #e0e3e8; border-radius: 6px; font-size: 14px; }
